@@ -12,6 +12,7 @@ body{
 a{
 	color: white;
 	transition: all 0.3s ease 0s;
+	text-decoration:none;
 }
 
 a:hover{
