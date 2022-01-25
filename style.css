@@ -56,6 +56,12 @@ a:hover{
   color: #F0ECE3;
   background-color: inherit;
   font-family: inherit;
+  transition: all 0.3s ease 0s;
+  text-decoration:none;
+}
+
+.dropdown .dropbtn:hover {
+	color: #bca7c2;
 }
 
 .dropdown-content {
