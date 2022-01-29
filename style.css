@@ -12,7 +12,6 @@ body{
 	font-family: 'Comfortaa', sans-serif;
 	max-width: 100%;
 	overflow-x: hidden;
-	margin: 1.5vw 5vw;
 	font-size: 16px;
 	line-height: 1.5em;
 }
@@ -65,18 +64,21 @@ a:hover{
 }
 
 .dropdown-content {
-  display: none;
+  visibility: hidden;
   position: absolute;
   background-color: #F0ECE3;
   min-width: 160px;
+  transition: visibility 0.65s ease-in;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
   float: none;
+  visibility: hidden;
   color: black;
   padding: 12px 16px;
+  transition: visibility 0.65s ease-in;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -87,8 +89,20 @@ a:hover{
 }
 
 .dropdown:hover .dropdown-content{
-	display: block;
+	visibility: visible;
 }
+.dropdown:hover .dropdown-content a{
+	visibility: visible;
+}
+
+.dropdown ul{
+	list-style-type: none;
+}
+li{
+	list-style-type: none;
+}
+
+
 
 /* CSS for resume page */
 
