@@ -5,6 +5,17 @@ light purple: 	#bca7c2
 creme: 			#F0ECE3
 
 */
+/* CSS for smaller screens */
+@media all and (max-width: 600px){
+	.rainbow{
+		flex: column nowrap;
+	}
+	.rainbow-text{
+		flex-basis: 100%;
+	}
+}
+
+/* basic website CSS */
 
 body{
   background-color: #FAFAFF;
@@ -12,17 +23,13 @@ body{
   font-family: 'Roboto', sans-serif; 
   max-width: 100%;
   overflow-x: hidden;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 1.5em;
-  margin: 0vw;
-}
-
-hr{
-  border-top: 2px solid black;
+  margin: 0vw 0vw 1vw 0vw;
 }
 
 a{
-  color: #F0ECE3;
+  color: white;
   transition: all 0.3s ease 0s;
   text-decoration:none;
 }
@@ -31,7 +38,8 @@ a:hover{
   color: #FECB34;
 }
 
-/* CSS for header of page */
+/* CSS for header of website */
+
 .header{
   color: white;
   padding: 0vw 7vw;
@@ -40,9 +48,18 @@ a:hover{
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: 900;
   background-color: #803D5F;
+}
+
+
+.header li{
+	list-style-type: none;
+}
+
+.header ul{
+	margin: 0.5em;
 }
 
 .dropdown {
@@ -93,25 +110,42 @@ a:hover{
 	visibility: visible;
 }
 
-.dropdown ul{
-	list-style-type: none;
-}
-.dropdown-content li{
-	list-style-type: none;
-}
+/* CSS for index page */
 
-nav{
-	align-self: flex-end;}
 
-li{
-	list-style-type: none;
+/* CSS for resumé page */
+
+
+/* CSS for code page */
+.code-content{
+	margin-top: 1vh;
 }
 
-ul{
-	margin: 0.5em;
+.rainbow{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 
+.rainbow-text{
+	flex-basis: 40%;
+	align-self: center;
+	padding: 1em;
+	text-align: justify;
+}
 
-/* CSS for resume page */
+.rainbow-text a{
+	color: black;
+	text-decoration: underline;
+}
 
+.rainbow-text a:hover{
+	color: #1B998B;
+	font-weight: 500;
+}
+
+.rainbow-text p{
+	font-size: 1.5em;
+	font-weight: 300;
+}
