@@ -23,10 +23,10 @@
 				<div class="dropdown">
 					<span style="font-weight: 900"> Works </span>
 					<ul class="dropdown-content">
-						<li><a href="index.html"> Art & Illustration </a></li>
-						<li><a href="index.html"> Video </a></li>
+						<li><a href="art.html"> Art & Illustration </a></li>
+						<li><a href="video.html"> Video </a></li>
 						<li><a href="code.html"> Code </a></li>
-						<li><a href="index.html"> Game Design </a></li>
+						<li><a href="game.html"> Game Design </a></li>
 					</ul>
 				</div>
 				<a href="resume.html"> &nbspResumé&nbsp </a>
@@ -34,10 +34,24 @@
 			</nav>
 		</div>
 		
-		<div class="code-content">
+		<div class="works-content">
+			<h1> Generative Coding </h1>
 			<div class="rainbow">
 				<div class="rainbow-code" alt="Embed showing 'Perpetual Rainbow' code running">
-					<iframe title="Perpetual Rainbow Code" src="https://editor.p5js.org/f51/full/7ztIji9vh" width="1200px" height="842px" style="border: 1px solid black"></iframe>
+					<iframe title="Perpetual Rainbow Code" src="https://editor.p5js.org/f51/full/7ztIji9vh" width="100%" height="642px" style="border: 1px solid black"></iframe>
+					<script>
+					function responseveIframe() {
+					  $('iframe').height(
+						$('iframe').attr("height") / $('iframe').attr("width") * $('iframe').width()
+					  );
+					}
+
+					responseveIframe();
+
+					$(window).resize(function() {
+					  responseveIframe();
+					});
+					</script>
 				</div>
 				<div class="rainbow-text">
 					<h2 style="font-size: 2em"> "Perpetual Rainbow" </h2>
@@ -50,7 +64,12 @@
 					<p> *Please note that the voice activation does not work in the embed. Please view the original code on the <a href="https://editor.p5js.org/f51/full/yMPvoZSWH"> p5.js website here </a>
 				</div>
 			</div>
-			
+			<hr>
+			<h1> HTML Coding </h2>
+			<div class="html-code">
+				<p> This website was 100% coded from scratch by me! To view the source code <a href="https://github.com/fizzara/fizzara.github.io/tree/main"> please click here </a></p>
+				
+			</div>
 		</div>
 	</body>
 	
