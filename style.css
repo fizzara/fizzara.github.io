@@ -3,25 +3,40 @@
 body{
   background-color: #FAFAFF;
   color: black;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Fira Sans', sans-serif; 
   max-width: 100%;
   overflow-x: hidden;
   font-size: 1em;
   line-height: 1.5em;
   margin: 0vw 0vw 1vw 0vw;
 }
-
-a{
-  color: white;
-  transition: all 0.3s ease 0s;
-  text-decoration:none;
+/* CSS to change website scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-a:hover{
-  color: #FECB34;
+::-webkit-scrollbar-track {
+  background: #F0ECE3;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #3FB1CA;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #219ebc;
+}
+
 
 /* CSS for header of website */
+
+.name a{
+	color: white;
+	text-decoration: none;
+	font-weight: 400; 
+	font-size: 50px; 
+	padding-bottom: 0.1vw;
+}
 
 .header{
   color: white;
@@ -32,7 +47,7 @@ a:hover{
   justify-content: space-between;
   align-items: flex-end;
   font-size: 2em;
-  font-weight: 900;
+  font-weight: 800;
   background-color: #803D5F;
 }
 
@@ -56,6 +71,18 @@ a:hover{
   color: #FECB34;
 }
 
+.header-category{
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration:none;
+  font-weight: 800;
+}
+
+.header-category:hover{
+	color: #FECB34;
+	font-style: italic;
+}
+
 .dropdown-content {
   visibility: hidden;
   position: absolute;
@@ -67,7 +94,7 @@ a:hover{
   padding-left: 0vw;
   transform: translate(-20px);
   color: #052C39;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .dropdown-content a {
@@ -138,17 +165,64 @@ a:hover{
 	font-weight: 300;
 }
 
+/* CSS for Art/Illustration */
+.stickers{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
 
+.sticker-content{
+	flex-basis: 20vw;
+	display: flex;
+	flex-flow: column wrap; 
+	text-align: center;
+}
+
+/* CSS for video page */
+.tlou2{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.tlou2-vid{
+	flex-basis: 55%;
+	align-self: stretch;
+}
+
+.tlou2-text{
+	flex-basis: 40%;
+	align-self: center;
+	padding: 1em;
+	text-align: justify;
+}
+
+
+.tlou2-text p{
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+/* CSS for specific media size */
 @media screen and (max-width: 1000px){
 	.rainbow{
-		flex: column nowrap;
+		flex-flow: column nowrap;
 	}
 	.rainbow-code{
-		flex-basis:98%;
+		flex-basis: 100%;
 	}
 	.rainbow-text{
 		flex-basis: 100%;
 	}
+	
+	.tlou2{
+		flex-flow: column nowrap;
+	}
+	.tlou2-vid{
+		flex-basis: 100%;
+	}
+	.tlou2-text{
+		flex-basis: 100%;
+	}
 }
-
-/* CSS for Art/Illustration */
