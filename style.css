@@ -1,39 +1,38 @@
 /* basic website CSS */
 
 body{
-  background-color: #FAFAFF;
-  color: black;
-  font-family: 'Fira Sans', sans-serif; 
-  font-weight: 300;
-  max-width: 100%;
-  overflow-x: hidden;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin: 0vw 0vw 1vw 0vw;
-  scrollbar-color: #219ebc #F0ECE3;
+	background-color: #FAFAFF;
+	color: black;
+	font-family: 'Fira Sans', sans-serif; 
+	font-weight: 300;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0vw 0vw 1vw 0vw;
+	scrollbar-color: #219ebc #F0ECE3;
 }
 
 p{
 	font-size: 1.5em;
 	font-weight: 400;
-	text-align: left;
 }
 
 /* CSS to change website scrollbar */
 ::-webkit-scrollbar {
-  width: 15px;
+	width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F0ECE3;
+	background: #F0ECE3;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #219ebc;
+	background: #219ebc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #243143;
+	background: #243143;
 }
 
 ::-webkit-scrollbar-button:decrement {
@@ -48,7 +47,6 @@ p{
 	background: url("Images/Arrow2.png") no-repeat;	
 	background-color: #F0ECE3;
 }
-
 
 
 /* CSS for header of website */
@@ -201,6 +199,24 @@ p{
 	display: flex;
 	flex-flow: column wrap; 
 	text-align: center;
+}
+
+.infographic{
+	display: flex;
+	flex: row wrap;
+	justify-content: space-between;
+}	
+
+.info-image{
+	flex-basis: 53%;
+}
+
+.info-text{
+	flex-basis: 43%;
+	padding: 5vh 1vw;
+	align-self: center;
+	text-align: justify;
+	background-color: #f6ebde;
 }
 
 /* CSS for video page */
