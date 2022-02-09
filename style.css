@@ -10,6 +10,7 @@ body{
   font-size: 1em;
   line-height: 1.5em;
   margin: 0vw 0vw 1vw 0vw;
+  scrollbar-color: #219ebc #F0ECE3;
 }
 
 p{
@@ -35,6 +36,20 @@ p{
   background: #243143;
 }
 
+::-webkit-scrollbar-button:decrement {
+    height: 14px;
+    background: url("Images/Arrow.png") no-repeat;	
+	border-bottom: 1px solid #F0ECE3;
+	background-color: #F0ECE3;
+    }
+	
+::-webkit-scrollbar-button:increment  {
+	height: 14px;
+	background: url("Images/Arrow2.png") no-repeat;	
+	background-color: #F0ECE3;
+}
+
+
 
 /* CSS for header of website */
 
@@ -56,7 +71,7 @@ p{
   align-items: flex-end;
   font-size: 2em;
   font-weight: 800;
-  background-color: #43354c;
+  background-color: #803d5f;
 }
 
 
@@ -204,8 +219,8 @@ p{
 	flex-basis: 40%;
 	align-self: flex-start;
 	padding: 1em;
-	overflow-y: scroll; 
-	max-height: 700px;
+	overflow-y: auto; 
+	max-height: 675px;
 	background-color: #F0ECE3;
 	line-height: 1.7em;
 }
