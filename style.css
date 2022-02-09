@@ -4,12 +4,20 @@ body{
   background-color: #FAFAFF;
   color: black;
   font-family: 'Fira Sans', sans-serif; 
+  font-weight: 300;
   max-width: 100%;
   overflow-x: hidden;
   font-size: 1em;
   line-height: 1.5em;
   margin: 0vw 0vw 1vw 0vw;
 }
+
+p{
+	font-size: 1.5em;
+	font-weight: 400;
+	text-align: left;
+}
+
 /* CSS to change website scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
@@ -20,11 +28,11 @@ body{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3FB1CA;
+  background: #219ebc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #219ebc;
+  background: #243143;
 }
 
 
@@ -48,7 +56,7 @@ body{
   align-items: flex-end;
   font-size: 2em;
   font-weight: 800;
-  background-color: #803D5F;
+  background-color: #43354c;
 }
 
 
@@ -147,6 +155,11 @@ body{
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
+/*
+.rainbow:hover{
+	background-color: blue;
+	color: white;
+}*/
 
 .rainbow-code{
 	flex-basis: 55%;
@@ -156,14 +169,10 @@ body{
 	flex-basis: 40%;
 	align-self: center;
 	padding: 1em;
-	text-align: justify;
+	background-color: #F0ECE3;
 }
 
 
-.rainbow-text p{
-	font-size: 1.5em;
-	font-weight: 300;
-}
 
 /* CSS for Art/Illustration */
 .stickers{
@@ -180,29 +189,85 @@ body{
 }
 
 /* CSS for video page */
-.tlou2{
+.vid{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
-.tlou2-vid{
+.vid-embed{
 	flex-basis: 55%;
 	align-self: stretch;
 }
 
-.tlou2-text{
+.vid-text{
 	flex-basis: 40%;
-	align-self: center;
+	align-self: flex-start;
 	padding: 1em;
-	text-align: justify;
+	overflow-y: scroll; 
+	max-height: 700px;
+	background-color: #F0ECE3;
+	line-height: 1.7em;
 }
 
 
-.tlou2-text p{
-	font-size: 1.5em;
-	font-weight: 300;
+/* CSS for photography page */
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
 }
+
+.slideshow-container a{
+	color: #1b998b
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0px 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  left: 500px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fecb34;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ff7a00;
+}
+
+.photo{
+}
+
 
 /* CSS for specific media size */
 @media screen and (max-width: 1000px){
@@ -216,13 +281,13 @@ body{
 		flex-basis: 100%;
 	}
 	
-	.tlou2{
+	.vid{
 		flex-flow: column nowrap;
 	}
-	.tlou2-vid{
+	.vid-embed{
 		flex-basis: 100%;
 	}
-	.tlou2-text{
+	.vid-text{
 		flex-basis: 100%;
 	}
 }

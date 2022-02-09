@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<script type="text/javascript" src="script.js"> </script>
+		<title> Fizza Ahmed </title>
+			
+	</head>
+	
+		
+	<body>
+		<div class="header" style="padding: 0.5em 7vw 0.7em 7vw">
+		
+			<span class="name"> <a href="index.html"> fizza ahmed </a></span>
+			
+			<a href="index.html"> <img src="Images/logo.png" alt="" style="max-height:4em"> </a>
+			
+			<nav id="navigation" class="site-navigation" role="navigation">
+			<li class="headLinks">
+				<div class="dropdown">
+					<span class="header-category""> Works </span>
+					<ul class="dropdown-content">
+						<li><a href="art.html"> Art & Illustration </a></li>
+						<li><a href="code.html"> Code </a></li>
+						<!-- <li><a href="game.html"> Game Design </a></li> -->
+						<li><a href="photography.html"> Photography </a></li>
+						<li><a href="video.html"> Video </a></li>
+					</ul>
+				</div>
+				<a class="header-category" href="index.html"> Resumé </a>
+			</li>
+			</nav>
+		</div>
+		
+		<div class="works-content">
+			<div class="photo">
+				<div class="slideshow-containter">
+					<div class="slides">
+						<img src="Images/StoryImages/story1.jpg" style="width:100%">
+					</div>
+
+					<div class="slides">
+						<img src="Images/StoryImages/story2.jpg" style="width:100%">
+					</div>
+
+					<div class="slides">
+						<img src="Images/StoryImages/story3.jpg" style="width:100%">
+					</div>
+
+					<div class="slides">
+						<img src="Images/StoryImages/story4.jpg" style="width:100%">
+					</div>
+
+					<div class="slides">
+						<img src="Images/StoryImages/story5.jpg" style="width:100%">
+					</div>
+					
+					<br>
+					<div style="text-align:center">
+					<a class="prev" style="text-decoration: none" onclick="plusSlides(-1)">&#10094;</a>
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span>
+					  <span class="dot" onclick="currentSlide(5)"></span>
+					<a class="next" style="text-decoration: none" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					
+					<script>
+						var slideIndex = 1;
+						showSlides(slideIndex);
+					</script>
+				</div>
+				
+			</div>
+			<div class="photo-text">
+				
+			</div>
+		</div>
+	
+		<br>
+	</body>
+</html>
