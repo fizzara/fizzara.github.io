@@ -57,7 +57,7 @@ p{
 	color: white;
 	text-decoration: none;
 	font-weight: 400; 
-	font-size: 50px; 
+	font-size: 1.5em; 
 	padding-bottom: 0.1vw;
 }
 
@@ -65,7 +65,7 @@ p{
   color: white;
   padding: 0vw 7vw;
   display: flex;	
-  height: 4em;
+  /* height: 4em; */
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-end;
@@ -98,7 +98,7 @@ p{
   color: white;
   transition: all 0.3s ease 0s;
   text-decoration:none;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .header-category:hover{
@@ -184,7 +184,7 @@ p{
 	flex-basis: 40%;
 	align-self: center;
 	padding: 1em;
-	background-color: #F0ECE3;
+	text-align: justify;
 }
 
 
@@ -224,6 +224,7 @@ p{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	margin: 1vh 0vw;
 }
 
 .vid-embed{
@@ -237,7 +238,7 @@ p{
 	padding: 1em;
 	overflow-y: auto; 
 	max-height: 675px;
-	background-color: #F0ECE3;
+	/* background-color: #F0ECE3; */
 	line-height: 1.7em;
 }
 
