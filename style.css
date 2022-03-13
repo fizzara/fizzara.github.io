@@ -2,7 +2,6 @@
 
 body{
 	background-color: #FAFAFF;
-	color: black;
 	font-family: 'Fira Sans', sans-serif; 
 	font-weight: 300;
 	max-width: 100%;
@@ -155,12 +154,11 @@ p{
 
 .works-content a{
 	color: black;
-	text-decoration: underline;
 }
 
 .works-content a:hover{
 	color: #1B998B;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 /* CSS for code page */
@@ -245,6 +243,21 @@ p{
 
 /* CSS for photography page */
 
+.photoholder{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.photo{
+	flex-basis: 50%;
+}
+
+.photo-text{
+	flex-basis: 40%;
+	padding: 5vh 2vw 1vh;
+}
+
 .slideshow-container {
   max-width: 500px;
   position: relative;
@@ -253,51 +266,66 @@ p{
 
 .slideshow-container a{
 	color: #1b998b
+	
 }
 
 /* Hide the images by default */
-.slides {
-  display: none;
+.slides1{
+	display: none;
+}
+
+.slides2{
+	display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
+  top: 50%;
   width: auto;
   margin-top: -22px;
+  padding: 7px;
+  color: white;
   font-weight: bold;
   font-size: 18px;
-  padding: 0px 10px;
+  text-decoration: none;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px 3px 3px 3px;
   user-select: none;
 }
 
 .next {
-  left: 500px;
-  border-radius: 3px 0 0 3px;
+  right: 7vw;
+  border-radius: 3px 3px 3px 3px;
 }
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-.dot {
+.dot1, .dot2 {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 0 5px;
   background-color: #fecb34;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+
+.active{
   background-color: #ff7a00;
 }
 
+.dot1:hover, .dot2:hover {
+  background-color: #ab5403;
+}
+
+
 .photo{
+	
 }
 
 
