@@ -357,6 +357,8 @@ p{
 
 .resume-me-text{
 	flex-basis: 50%;
+	margin-top: 0;
+	padding-top: 0;
 }
 
 .resume-container1{
@@ -537,12 +539,10 @@ p{
 		flex-flow: row wrap;
 	}
 	.resume-me-picture{
-		flex-basis: 100%;
-		max-width: 100%;
-		margin-right: 0em;
+		flex-basis: 45%;
 	}
 	.resume-me-text{
-		flex-basis: 100%;
+		flex-basis: 45%;
 	}
 	.resume-skills{
 		padding: 0em 0em;
