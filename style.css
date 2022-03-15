@@ -400,6 +400,7 @@ p{
 	flex-flow: row nowrap;
 	gap: 0.5vw;
 	margin-right: 1vw;
+	align-self: center;
 }
 
 .lookimage{
@@ -507,7 +508,29 @@ p{
 	}
 	.rainbow-text{
 		flex-basis: 100%;
+		padding-left: 0em;
 	}
+	
+	
+	/* .stickers{ */
+		/* display: flex; */
+		/* flex-flow: row wrap; */
+		/* justify-content: space-around; */
+	/* } */
+
+	.sticker-content{
+		flex-basis: 70%;
+	}
+
+
+	.info-image{
+		flex-basis: 100%;
+	}
+
+	.info-text{
+		flex-basis: 100%;
+	}
+	
 	
 	.vid{
 		flex-flow: column nowrap;
@@ -535,16 +558,22 @@ p{
 	.resume-content{
 		flex-flow: row wrap;
 	}
-	.resume-me{
-		flex-flow: row wrap;
-	}
-	.resume-me-picture{
-		flex-basis: 45%;
-	}
-	.resume-me-text{
-		flex-basis: 45%;
-	}
 	.resume-skills{
 		padding: 0em 0em;
+	}
+	
+	
+}
+
+@media screen and (max-width: 700px){
+	.resume-me-picture{
+		flex-basis: 100%;
+	}
+	.resume-me-text{
+		flex-basis: 100%;
+	}
+	
+	.resume-more{
+		margin-right: 0vw;
 	}
 }
