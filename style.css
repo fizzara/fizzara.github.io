@@ -52,6 +52,7 @@ p{
 
 /* CSS for header of website */
 
+
 .name a{
 	color: white;
 	text-decoration: none;
@@ -70,6 +71,7 @@ p{
   align-items: flex-end;
   font-size: 2em;
   font-weight: 800;
+  line-height: 1em;
   background-color: #803d5f;
 }
 
@@ -329,8 +331,172 @@ p{
 }
 
 
-/* CSS for specific media size */
-@media screen and (max-width: 1000px){
+
+/* CSS for Resumé page */
+
+.resume-content{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.resume-info{
+	/* flex-basis: 60%; */
+	margin-right: 15px;
+}
+
+.resume-me{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.resume-me-picture{
+	flex-basis: 30%;
+	max-width: 100%;
+	margin-right: 2em;
+}
+
+.resume-me-text{
+	flex-basis: 50%;
+}
+
+.resume-container1{
+	/* margin-left: 5vw; */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+	/* text-align: left; */
+	align-self: center;
+	background-color: #f0ece3;
+	padding: 0em 2vw;
+	margin-bottom: 1vh;
+	margin-left: 0%;
+	max-width: 80%;
+}
+
+.resume-education{
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: left;
+	max-width: 40%;
+	padding: 0em 1em;
+}
+
+.resume-skills{
+	text-align: left;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	padding: 0em 1em;
+	max-width: 40%; 
+	margin-top: 1em;
+}
+
+.resume-more{
+	text-align: left;
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 0.5vw;
+	margin-right: 1vw;
+}
+
+.lookimage{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.lookoverlay{
+	position: relative;
+	bottom: 64px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.8); /* Black see-through */
+	color: #f1f1f1;
+	width: 100%;
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	padding: 20px 0px;
+	font-size: 2em;
+	font-weight: 600;
+	text-align: center;
+}
+
+.resume-more a{
+	text-decoration: none;
+}
+
+.lookcontainer:hover .lookoverlay{
+	opacity: 1;
+}
+
+.timeline{
+	position: relative;
+	top: 0px;
+	margin: auto;
+	/* flex-basis: 40%; */
+}
+
+.timeline::after { /*line*/
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color:#43354c; 
+  background-image: linear-gradient(#052c39, #5d4a69);
+  top: 0;
+  bottom: 0;
+  left:0;
+}
+
+.container{
+  padding: 10px 0px 10px 40px;
+  position: relative;
+}
+
+.container::after { /*circles*/
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fafaff;
+  border: 4px solid #fecb34;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  left: -16px;
+}
+
+.container::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #f0ece3;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f0ece3 transparent transparent;
+}
+
+.content{
+  padding: 5px 20px;
+  background-color: #f0ece3;
+  position: relative;
+  border-radius: 6px;
+}
+
+.content p, h3{
+	font-weight: 400;
+	font-size: 1em;
+	margin-bottom: 0.5em;
+	margin-top: 0em;
+}
+
+.content h2{
+	margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 1300px){
 	.rainbow{
 		flex-flow: column nowrap;
 	}
@@ -349,5 +515,36 @@ p{
 	}
 	.vid-text{
 		flex-basis: 100%;
+	}
+	
+	.resume-info{
+		flex-basis: 100%;
+	}
+	.timeline{
+		flex-basis: 100%;
+	}
+	
+	/* .resume-container1{ */
+		/* margin-left: 0vw; */
+	/* } */
+	.resume-container1{
+		margin-left: 10%;
+	}
+	.resume-content{
+		flex-flow: row wrap;
+	}
+	.resume-me{
+		flex-flow: row wrap;
+	}
+	.resume-me-picture{
+		flex-basis: 100%;
+		max-width: 100%;
+		margin-right: 0em;
+	}
+	.resume-me-text{
+		flex-basis: 100%;
+	}
+	.resume-skills{
+		padding: 0em 0em;
 	}
 }
