@@ -205,7 +205,7 @@ p{
 
 .infographic{
 	display: flex;
-	flex: row wrap;
+	flex-flow: row wrap;
 	justify-content: space-between;
 }	
 
@@ -518,18 +518,7 @@ p{
 		/* justify-content: space-around; */
 	/* } */
 
-	.sticker-content{
-		flex-basis: 70%;
-	}
-
-
-	.info-image{
-		flex-basis: 100%;
-	}
-
-	.info-text{
-		flex-basis: 100%;
-	}
+	
 	
 	
 	.vid{
@@ -562,6 +551,14 @@ p{
 		padding: 0em 0em;
 	}
 	
+	.info-image{
+		flex-basis: 100%;
+	}
+
+	.info-text{	
+		flex-basis: 100%;
+		padding: 0vw 2vw;
+	}
 	
 }
 
@@ -576,4 +573,9 @@ p{
 	.resume-more{
 		margin-right: 0vw;
 	}
+	
+	.sticker-content{
+		flex-basis: 70%;
+	}
+
 }
