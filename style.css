@@ -219,6 +219,59 @@ p{
 	text-align: justify;
 }
 
+.char-design{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.char-container {
+  position: relative;
+  flex-basis: 53%;
+}
+
+.char-text{
+	flex-basis: 43%;
+	text-align: justify;
+	align-self: center;
+}
+
+.char-slide{
+	display: none;
+}
+
+.char-prev, .char-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.char-next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.char-prev:hover, .char-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #052c39;
+  padding: 0.1em 1em;
+  color: white;
+}
+
+
 /* CSS for video page */
 .vid{
 	display: flex;
@@ -512,15 +565,6 @@ p{
 	}
 	
 	
-	/* .stickers{ */
-		/* display: flex; */
-		/* flex-flow: row wrap; */
-		/* justify-content: space-around; */
-	/* } */
-
-	
-	
-	
 	.vid{
 		flex-flow: column nowrap;
 	}
@@ -560,6 +604,15 @@ p{
 		padding: 0vw 2vw;
 	}
 	
+	.char-container {
+	  flex-basis: 100%;
+	}
+
+	.char-text{
+		flex-basis: 100%;
+		padding: 0vw 2vw;
+	}
+	
 }
 
 @media screen and (max-width: 700px){
@@ -578,4 +631,11 @@ p{
 		flex-basis: 70%;
 	}
 
+}
+
+
+@media screen and (min-width: 2300px){
+	.works-content{
+		margin: 1vh 12vw;
+	}
 }

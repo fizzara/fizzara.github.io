@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<script type="text/javascript" src="script.js"></script>
 		<title> Fizza Ahmed </title>
 			
 	</head>
@@ -37,7 +38,7 @@
 		
 		<div class="works-content">
 			
-			<h1> Illustration </h1>
+			<!-- <h1> Illustration </h1> -->
 			<h2 style="padding-left: 1vw"> Humanities Welcome Week Sticker Design </h2>
 			<p style="padding-left: 1vw"> For Welcome Week 2022 I was asked to design the stickers that would be given to the incoming first years, as a way to welcome them to the McMaster community! </p>
 			<p style="padding-left: 1vw"> To view and download a PDF of my process work, <a href="Additional Files/Ahmed_Sticker Process Work.pdf" download>please click here.</a></p>
@@ -61,6 +62,37 @@
 					an enamel pin. A retro art look that will
 					match with many other colours, or that
 					would look good by itself.</p>
+				</div>
+			</div>
+			<hr>
+			<h2 style="padding-left:1vw"> Thesis Project Character Design </h2>
+			<div class="char-design"> 
+				<div class="char-container">
+					<div class="char-slide">
+						<img class="char-img" src="Images/walk.gif" style="width: 100%" alt="Walk Animation">
+					</div>
+					<div class="char-slide">
+						<img class="char-img" src="Images/jump.gif" style="width: 100%" alt="Jump and Fall Animation">
+					</div>
+					<div class="char-slide">
+						<img class="char-img" src="Images/idle.gif" style="width: 100%" alt="Idle Animation">
+					</div>
+					
+					<a class="char-prev" onclick="addSlides(-1)">&#10094;</a>
+					<a class="char-next" onclick="addSlides(1)">&#10095;</a>
+					
+					
+					<div class="caption-container">
+						<p style="font-size: 1.3em" id="caption"></p>
+					</div>
+					<script>
+						var charSlideIndex = 1;
+						displaySlides(charSlideIndex);	
+					</script>
+					
+				</div>
+				<div class="char-text">
+					<p> The art and animation of the character for my thesis project, a game on the topic of mental health, meant to educate players on various mental health disorders. These animations include the walk cycle, the idle animation cycle, and animations for jumping and falling. They are all used for traversal in the game, and the skirt and hair flow as the character moves and as the in world wind blows by. </p>
 				</div>
 			</div>
 			<hr>
