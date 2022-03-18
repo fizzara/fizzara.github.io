@@ -408,7 +408,7 @@ p{
 }
 
 .resume-me-text{
-	flex-basis: 50%;
+	flex-basis: 60%;
 	margin-top: 0;
 	padding-top: 0;
 }
@@ -552,7 +552,7 @@ p{
 
 /* CSS FOR MEDIA QUERYS */
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1000px){
 	.rainbow{
 		flex-flow: column nowrap;
 	}
