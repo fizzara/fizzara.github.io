@@ -629,6 +629,66 @@ p{
 	
 }
 
+@media screen and (hover:none){
+	.header{
+	  padding: 0vw 1vw;
+	  flex-flow: column nowrap;
+	  justify-content: space-around;
+	  align-items: center;
+	}
+	.site-navigation{
+		order: 3;
+	}
+	.name{
+		display: none;
+	}
+	.logo-img{
+		order: 1;
+		padding-bottom: 1vh;
+	}
+	
+	.land-column{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	
+	
+	.resume-info{
+		flex-basis: 100%;
+	}
+	.resume-container1{
+		flex-flow: column nowrap;
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+	
+	.resume-education{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.resume-skills{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.resume-me-picture{
+		flex-basis: 100%;
+	}
+	.resume-me-text{
+		flex-basis: 100%;
+	}
+	.resume-more{
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		gap: 0vw;
+	}
+	
+	
+	.sticker-content{
+		flex-basis: 70%;
+	}
+
+}
+
 @media screen and (max-width: 800px){
 	.header{
 	  padding: 0vw 1vw;
