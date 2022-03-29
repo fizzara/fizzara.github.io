@@ -310,7 +310,8 @@ p{
 
 .photo-text{
 	flex-basis: 40%;
-	padding: 5vh 2vw 1vh;
+	align-self: center;
+	padding-left: 2vw;
 }
 
 .slideshow-container {
@@ -379,8 +380,20 @@ p{
 }
 
 
-.photo{
+.land-photos{
+	display: flex;
+	flex-flow: row wrap;
+	gap: 4px;
 	
+}
+
+.land-column{
+	flex-basis: 33%;
+	gap: 3px;
+}
+
+.land-column img{
+	width: 100%;
 }
 
 
@@ -609,9 +622,14 @@ p{
 		padding: 0vh 2vw 1vh;
 	}
 	
+	.land-column{
+		flex-basis: 50%;
+		max-width: 50%;
+	}
+	
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
 	.header{
 	  padding: 0vw 1vw;
 	  flex-flow: column nowrap;
@@ -627,6 +645,11 @@ p{
 	.logo-img{
 		order: 1;
 		padding-bottom: 1vh;
+	}
+	
+	.land-column{
+		flex-basis: 100%;
+		max-width: 100%;
 	}
 	
 	
