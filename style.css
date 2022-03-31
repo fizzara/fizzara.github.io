@@ -629,7 +629,7 @@ p{
 	
 }
 
-@media screen and (hover:none){
+@media screen and (hover:none) and (orientation: portrait){
 	.header{
 	  padding: 0vw 1vw;
 	  flex-flow: column nowrap;
