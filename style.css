@@ -431,10 +431,11 @@ p{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	/* text-align: left; */
 	background-color: #f0ece3;
 	padding: 0em 2vw;
+	gap: 3vw;
 	margin-right: 1vw;
 	margin-bottom: 1vh;
 	margin-left: 0%;
