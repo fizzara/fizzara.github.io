@@ -143,17 +143,7 @@ p{
 	visibility: visible;
 }
 
-#download{
-	color: black;
-	font-weight: 400;
-	transition: all 0.3s ease 0s;
-	text-decoration: none;
-}
 
-#download:hover{
-	text-decoration: underline;
-	color: #1b998b;
-}
 
 	
 /* CSS for all "works" pages */
@@ -444,7 +434,7 @@ p{
 	padding: 0em 2vw;
 	gap: 3vw;
 	margin-right: 1vw;
-	margin-bottom: 1vh;
+	margin-bottom: 0vh;
 	margin-left: 0%;
 	max-width: 100%;
 }
@@ -462,10 +452,29 @@ p{
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
-	padding: 0em 1em;
+	padding: 0em 0em;
 	max-width: 40%; 
-	margin-top: 1em;
 }
+
+#download-resume{
+	color: black;
+	font-weight: 400;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+
+#download-resume:hover{
+	text-decoration: underline;
+	color: #1b998b;
+}
+
+#res-down-hold{
+	text-align: center;
+	padding: 2px 0px 15px;
+	margin-right: 1vw;
+	background-color: #f0ece3;
+}
+
 
 .resume-more{
 	text-align: left;
@@ -573,7 +582,7 @@ p{
 
 /* CSS FOR MEDIA QUERYS */
 
-@media screen and (max-width: 800px), (max-width: 1000px) and (hover:none){
+@media screen and (max-width: 800px), ((max-width: 1440px) and (hover:none)){
 	.header{
 	  padding: 0vw 1vw;
 	  flex-flow: column nowrap;
@@ -610,16 +619,29 @@ p{
 	.resume-education{
 		flex-basis: 100%;
 		max-width: 100%;
+		justify-content: flex-start;
 	}
 	.resume-skills{
-		flex-basis: 100%;
+		flex-basis: 100%;	
+		width: 95%;
 		max-width: 100%;
+		justify-content: flex-start;
+		align-self: left;
+		text-align: left;
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 	.resume-me-picture{
 		flex-basis: 100%;
 	}
 	.resume-me-text{
 		flex-basis: 100%;
+	}
+	
+	#res-down-hold{
+		text-align: left;
+		padding-left: 2em;
+		padding-top: 2px;
 	}
 	.resume-more{
 		flex-flow: row wrap;
