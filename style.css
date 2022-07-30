@@ -52,7 +52,6 @@ p{
 
 /* CSS for header of website */
 
-
 .name a{
 	color: white;
 	text-decoration: none;
@@ -144,11 +143,19 @@ p{
 	visibility: visible;
 }
 
-/* CSS for index page */
+#download{
+	color: black;
+	font-weight: 400;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
 
+#download:hover{
+	text-decoration: underline;
+	color: #1b998b;
+}
 
-/* CSS for resumé page */
-
+	
 /* CSS for all "works" pages */
 .works-content{
 	margin: 1vh 7vw;
@@ -566,6 +573,68 @@ p{
 
 /* CSS FOR MEDIA QUERYS */
 
+@media screen and (max-width: 800px), (max-width: 1000px) and (hover:none){
+	.header{
+	  padding: 0vw 1vw;
+	  flex-flow: column nowrap;
+	  justify-content: space-around;
+	  align-items: center;
+	}	
+	.site-navigation{
+		order: 3;
+	}
+	.name{
+		display: none;
+	}
+	.logo-img{
+		order: 1;
+		padding-bottom: 1vh;
+	}
+	
+	.land-column{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	
+	
+	.resume-info{
+		flex-basis: 100%;
+	}
+	.resume-container1{
+		flex-basis: 100%;
+		flex-flow: column nowrap;
+		padding-right: 0px;
+		margin-right: 0px;
+	}
+	
+	.resume-education{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.resume-skills{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.resume-me-picture{
+		flex-basis: 100%;
+	}
+	.resume-me-text{
+		flex-basis: 100%;
+	}
+	.resume-more{
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		gap: 0vw;
+	}
+	
+	
+	.sticker-content{
+		flex-basis: 70%;
+	}
+
+}
+
+
 @media screen and (max-width: 1000px){
 	.rainbow{
 		flex-flow: column nowrap;
@@ -630,7 +699,19 @@ p{
 	
 }
 
-@media screen and (hover:none) and (orientation: portrait){
+
+@media screen and (max-width: 1400px) and (min-width: 1001px){
+	.timeline{
+		flex-basis: 33%;
+	}
+	
+	.resume-info{
+		flex-basis: 66%;
+	}
+}
+
+/*
+@media screen and (orientation: portrait){
 	.header{
 	  padding: 0vw 1vw;
 	  flex-flow: column nowrap;
@@ -689,66 +770,8 @@ p{
 	}
 
 }
+*/
 
-@media screen and (max-width: 800px){
-	.header{
-	  padding: 0vw 1vw;
-	  flex-flow: column nowrap;
-	  justify-content: space-around;
-	  align-items: center;
-	}
-	.site-navigation{
-		order: 3;
-	}
-	.name{
-		display: none;
-	}
-	.logo-img{
-		order: 1;
-		padding-bottom: 1vh;
-	}
-	
-	.land-column{
-		flex-basis: 100%;
-		max-width: 100%;
-	}
-	
-	
-	.resume-info{
-		flex-basis: 100%;
-	}
-	.resume-container1{
-		flex-flow: column nowrap;
-		padding-right: 0px;
-		margin-right: 0px;
-	}
-	
-	.resume-education{
-		flex-basis: 100%;
-		max-width: 100%;
-	}
-	.resume-skills{
-		flex-basis: 100%;
-		max-width: 100%;
-	}
-	.resume-me-picture{
-		flex-basis: 100%;
-	}
-	.resume-me-text{
-		flex-basis: 100%;
-	}
-	.resume-more{
-		flex-flow: row wrap;
-		justify-content: flex-start;
-		gap: 0vw;
-	}
-	
-	
-	.sticker-content{
-		flex-basis: 70%;
-	}
-
-}
 
 
 @media screen and (min-width: 2300px){
