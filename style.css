@@ -582,7 +582,7 @@ p{
 
 /* CSS FOR MEDIA QUERYS */
 
-@media screen and (max-width: 800px), ((max-width: 1440px) and (hover:none)){
+@media screen and (max-width: 800px), ((max-width: 1440px) and ((pointer:coarse), (pointer:none))){
 	.header{
 	  padding: 0vw 1vw;
 	  flex-flow: column nowrap;
@@ -657,7 +657,7 @@ p{
 }
 
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1150px){
 	.rainbow{
 		flex-flow: column nowrap;
 	}
@@ -722,7 +722,7 @@ p{
 }
 
 
-@media screen and (max-width: 1400px) and (min-width: 1001px){
+@media screen and (max-width: 1400px) and (min-width: 1151px){
 	.timeline{
 		flex-basis: 33%;
 	}
