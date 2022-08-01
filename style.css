@@ -582,7 +582,7 @@ p{
 
 /* CSS FOR MEDIA QUERYS */
 
-@media screen and (max-width: 800px), ((max-width: 1440px) and ((pointer:coarse), (pointer:none))){
+@media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
 	.header{
 	  padding: 0vw 1vw;
 	  flex-flow: column nowrap;
