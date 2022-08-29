@@ -488,7 +488,9 @@ p{
 .lookimage{
 	display: block;
 	width: 100%;
+	max-width: 100%;
 	height: auto;
+	min-width: 186px;
 }
 
 .lookoverlay{
@@ -645,10 +647,12 @@ p{
 	}
 	.resume-more{
 		flex-flow: row wrap;
-		justify-content: flex-start;
-		gap: 0vw;
+		gap: 0px;
 	}
 	
+	.lookimage{
+		width: 40vw;
+	}
 	
 	.sticker-content{
 		flex-basis: 70%;
