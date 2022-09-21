@@ -168,7 +168,7 @@ p{
 	justify-content: space-between;
 }
 /*
-.rainbow:hover{
+.rainbow:hover{s
 	background-color: blue;
 	color: white;
 }*/
@@ -229,7 +229,7 @@ p{
 
 .char-text{
 	flex-basis: 43%;
-	text-align: justify;
+	text-align: left;
 	align-self: center;
 }
 
