@@ -13,8 +13,16 @@ body{
 }
 
 p{
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: 400;
+}
+
+h1{
+	font-size: 2.5em;
+}
+
+h2{
+	font-size: 1.8em;
 }
 
 /* CSS to change website scrollbar */
@@ -122,7 +130,7 @@ p{
 
 .dropdown-content a {
   float: none;
-  color: #052C39;
+  /* color: #052C39; */
   visibility: hidden;
   color: black;
   padding: 12px 16px;
@@ -184,7 +192,19 @@ p{
 	text-align: left;
 }
 
+.codepen{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
 
+.codepen-ex{
+	width: 40%;
+}
+
+.html-code{
+	margin-left: 5px;
+}
 
 /* CSS for Art/Illustration */
 .stickers{
@@ -480,6 +500,7 @@ p{
 	text-align: left;
 	display: flex;
 	flex-flow: row nowrap;
+	justify-content: space-around;
 	gap: 0.5vw;
 	margin-right: 1vw;
 	align-self: center;
@@ -487,9 +508,7 @@ p{
 
 .lookimage{
 	display: block;
-	width: 100%;
-	max-width: 100%;
-	height: auto;
+	max-width: 100%; 
 	min-width: 186px;
 }
 
@@ -582,6 +601,11 @@ p{
 	margin-bottom: 0.5em;
 }
 
+/* CSS FOR THESIS PAGE */
+.thesis h3{
+	font-size: 1.3em;	
+}
+
 /* CSS FOR MEDIA QUERYS */
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
@@ -650,9 +674,9 @@ p{
 		gap: 0px;
 	}
 	
-	.lookimage{
+	/* .lookimage{
 		width: 40vw;
-	}
+	} */
 	
 	.sticker-content{
 		flex-basis: 70%;
@@ -801,7 +825,10 @@ p{
 
 
 @media screen and (min-width: 2300px){
-	.works-content{
-		margin: 1vh 12vw;
+	.resume-content, .works-content{
+		margin: 1vh 7vw;
+	}
+	.header{
+		padding: 0vw 7vw;
 	}
 }
