@@ -12,6 +12,11 @@ body{
 	scrollbar-color: #219ebc #F0ECE3;
 }
 
+body,html{
+	margin: 0vw;
+	padding: 0vw;
+}
+
 p{
 	font-size: 1.3em;
 	font-weight: 400;
@@ -19,6 +24,7 @@ p{
 
 h1{
 	font-size: 2.5em;
+	margin: 0;
 }
 
 h2{
@@ -36,7 +42,7 @@ h2{
 
 ::-webkit-scrollbar-thumb {
 	background: #219ebc;
-	border-radius: 50px;
+	/* border-radius: 50px; */
 	box-shadow: 0 2 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -44,20 +50,70 @@ h2{
 	background: #243143;
 }
 
-/* ::-webkit-scrollbar-button:decrement { */
-    /* height: 14px; */
-    /* background: url("Images/Arrow.png") no-repeat;	 */
-	/* border-bottom: 1px solid #F0ECE3; */
-	/* background-color: #F0ECE3; */
-    /* } */
+/* ::-webkit-scrollbar-button:decrement { 
+    height: 14px;
+    background: url("Images/Arrow.png") no-repeat;	
+	border-bottom: 1px solid #F0ECE3;
+	background-color: #F0ECE3;
+}
 	
-/* ::-webkit-scrollbar-button:increment  { */
-	/* height: 14px; */
-	/* background: url("Images/Arrow2.png") no-repeat;	 */
-	/* background-color: #F0ECE3; */
-/* } */
+::-webkit-scrollbar-button:increment  {
+	height: 14px;
+	background: url("Images/Arrow2.png") no-repeat;	
+	background-color: #F0ECE3;
+}
+ */
 
 
+
+/* CSS for Intro Page */
+
+.large{
+	background-color: #803d5f;
+	width: 100vw;
+	/* text-align: center; */
+	height: 100vh;
+	animation: backgrnd 1.5s ease-in-out;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.introTop{
+	animation: fadein 1s linear 1.5s forwards;
+	opacity: 0;
+	padding-top: 5vh;
+	/* margin-top:0.1vh; */
+	color: rgb(243, 229, 210);
+	font-size: 5em;
+}
+
+.introItems{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-top: 2vh;
+	text-align: center;
+}
+
+/* .lateAnimate{
+	animation: goDown 3s 10s;
+} */
+
+@keyframes goDown {
+	from{transform: translate(0, 0)}
+	to{transform: translate(0, 100vh)}
+}
+
+@keyframes fadein {
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+@keyframes backgrnd{
+	from{transform: translate(0, -100vh)}
+	to{transform: translate(0, 0)}
+}
 /* CSS for header of website */
 
 .name a{
@@ -66,6 +122,15 @@ h2{
 	font-weight: 400; 
 	font-size: 1.5em; 
 	padding-bottom: 0.1vw;
+}
+
+/* .name{
+	animation: loadAnim 1.7s linear 0s 1 backwards;
+} */
+
+@keyframes loadAnim {
+	0%{transform: translate(0,-200px);}
+	100%{transform: translate(0);}
 }
 
 .header{
@@ -85,6 +150,7 @@ h2{
 
 .header li{
 	list-style-type: none;
+	/* animation: loadAnim 1.7s linear 0s 1 backwards; */
 }
 
 .header ul{
@@ -96,11 +162,18 @@ h2{
   overflow: hidden;
   transition: all 0.3s ease 0s;
   padding-right: 0.5em;
+  /* transition: transform 0.2s; */
 }
 
 .dropdown:hover{
   color: #FECB34;
+  /* transform: translate(0px, -4px); */
 }
+
+/* @keyframes aniname {
+	from{transform: translate(0, 0);}
+	to{transform: translate(0, -10px);}
+} */
 
 .header-category{
   color: white;
@@ -599,6 +672,7 @@ h2{
 
 .content h2{
 	margin-bottom: 0.5em;
+	line-height: 1em;
 }
 
 /* CSS FOR THESIS PAGE */
