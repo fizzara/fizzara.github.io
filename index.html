@@ -16,21 +16,21 @@
 
     <body>
         <div class="large">
-            <div style="text-align: center; width: 30em; line-height: 5em;">
-                <img class="introTop fade" src="Images/logocol.png" alt="Fizza Ahmed Logo" style="max-width: 10vw">
+            <div class="introTopDiv">
+                <img class="introTop fade" id="indexLogo" src="Images/logocol.png" alt="Fizza Ahmed Logo">
                 <h1 class="introTop fade" id="nameChange">.fizzara</h1>
             </div>
             <div class="introItems">
-                <div style="color:white; padding: 3vw;">
-                    <img src="Images/lookingfor/van.png" alt="" class="randimg fade" onclick="jumpTo()">
-                    <img src="Images/lookingfor/rainbow.png" alt="" class="randimg fade" onclick="jumpTo()">
-                    <img src="Images/lookingfor/drowning.png" alt="" class="randimg fade" onclick="jumpTo()">
-                    <img src="Images/lookingfor/vid.png" alt="" class="randimg fade" onclick="jumpTo()">
-                    <h2 class="fade" onclick="jumpTo()">View A Random Project</h2>
+                <div class="introItemDiv" onclick="jumpTo()">
+                    <img src="Images/lookingfor/van.png" alt="" class="randimg fade">
+                    <img src="Images/lookingfor/rainbow.png" alt="" class="randimg fade">
+                    <img src="Images/lookingfor/drowning.png" alt="" class="randimg fade">
+                    <img src="Images/lookingfor/vid.png" alt="" class="randimg fade">
+                    <h2 class="fade" >View A Random Project</h2>
                 </div>
 
-                <div style="padding: 3vw; color: white" onclick="resume=true; jumpTo()">
-                    <img src="Images/lookingfor/me.png" alt="" class="fade">
+                <div class="introItemDiv" onclick="resume=true; jumpTo()">
+                    <img src="Images/lookingfor/me.png" alt="" class="meimg fade">
                     <h2 class="fade">View My Resumé</h2>
                 </div>
             </div>
@@ -101,8 +101,8 @@
                 for(m = 0; m < items.length; m++){
                     tester.push(items[m]);
                 }
-                for(m = 0; m < 2; m++){
-                    items[m].style.opacity = 1;
+                for(m = 0; m < tester.length; m++){
+                    tester[m].style.opacity = 1;
                 }
                 for(k = 0; k < tester.length; k++){
                     tester[k].style.opacity = opac;

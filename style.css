@@ -89,12 +89,32 @@ h2{
 	font-size: 5em;
 }
 
+.introTopDiv{
+	text-align: center; 
+	width: 30em; 
+	line-height: 5em;
+}
+
 .introItems{
+	animation: fadein 1s linear 1.5s forwards;
+	opacity: 0;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	margin-top: 2vh;
 	text-align: center;
+}
+
+.introItemDiv{
+	color: rgb(243, 229, 210);
+	padding: 3vw;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+#indexLogo{
+	max-width: 10vw;
 }
 
 /* .lateAnimate{
@@ -127,12 +147,12 @@ h2{
 
 /* .name{
 	animation: loadAnim 1.7s linear 0s 1 backwards;
-} */
+}
 
 @keyframes loadAnim {
 	0%{transform: translate(0,-200px);}
 	100%{transform: translate(0);}
-}
+} */
 
 .header{
   color: white;
@@ -684,8 +704,46 @@ h2{
 /* CSS FOR MEDIA QUERYS */
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
+
+	body{
+		overflow: hidden;
+	}
+	.large{
+		flex-flow: column nowrap;
+		overflow: hidden;
+	}
+	
 	.introTop{
+		padding-top: 0vh;
+		margin-top: 0vh;
 		font-size: 2.5em;
+	}
+
+	#indexLogo{
+		max-width: 30vw;
+	}
+
+	.introTopDiv{
+		line-height: 2.5em;
+	}
+	
+	.introItems{
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		/* margin-top: 2em; */
+		text-align: center;
+		margin-top: 7vh;
+	}
+
+	.randimg, .meimg{
+		max-width: 40vw;
+		align-self: center;
+	}	
+
+	.introItemDiv{
+		padding: 0vw;
+		font-size: 1em;
 	}
 	
 	.header{
