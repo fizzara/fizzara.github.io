@@ -13,11 +13,13 @@ $(window).resize(function() {
 
 
 
-var slideIndex = [1,1];
-var slideId = ["slides1", "slides2"]
-var dotsId = ["dot1", "dot2"]
-showSlides(1, 0);
-showSlides(1, 1);
+var slideIndex = [1, 1, 1, 1, 1, 1];
+var slideId = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6"]
+var dotsId = ["dot1", "dot2", "dot3", "dot4", "dot5", "slides6"]
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
@@ -37,7 +39,7 @@ function showSlides(n, no) {
     x[i].style.display = "none";
   }
   for(i = 0; i < dots.length; i++){
-	dots[i].className=dots[i].className.replace(" active", "");
+	  dots[i].className=dots[i].className.replace(" active", "");
   }
   x[slideIndex[no]-1].style.display = "block";
   dots[slideIndex[no]-1].className += " active";
