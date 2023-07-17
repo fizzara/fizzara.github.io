@@ -706,12 +706,12 @@ h2{
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
 
 	body{
-		overflow: auto;
+		overflow: scroll;
 	}
 
 	.large{
 		flex-flow: column nowrap;
-		overflow: auto;
+		overflow: scroll;
 	}
 	
 	.introTop{
