@@ -823,6 +823,17 @@ h2{
 		flex-basis: 70%;
 	}
 
+	.design-iframe{
+		flex-basis: 100%;
+	}
+	
+	.design-text{
+		flex-basis: 100%;
+		align-self: center;
+		padding: 1em;
+		text-align: left;
+	}
+
 }
 
 
