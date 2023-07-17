@@ -11,7 +11,7 @@ body{
 	line-height: 1.5em;
 	margin: 0vw 0vw 1vw 0vw;
 	scrollbar-color: #219ebc #F0ECE3;
-	-webkit-overflow-scrolling: touch;
+	/* -webkit-overflow-scrolling: touch; */
 }
 
 
@@ -35,7 +35,7 @@ h2{
 }
 
 /* CSS to change website scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	width: 15px;
 }
 
@@ -46,12 +46,12 @@ h2{
 ::-webkit-scrollbar-thumb {
 	background: #219ebc;
 	/* border-radius: 50px; */
-	box-shadow: 0 2 6px rgba(0, 0, 0, 0.3);
+	/*box-shadow: 0 2 6px rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #243143;
-}
+} */
 
 /* ::-webkit-scrollbar-button:decrement { 
     height: 14px;
@@ -708,10 +708,10 @@ h2{
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
 
-	body{
+	/* body{
 		-webkit-overflow-scrolling: touch;
 		overflow: auto;
-	}
+	} */
 
 	.large{
 		flex-flow: column nowrap;
