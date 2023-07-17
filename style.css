@@ -708,14 +708,13 @@ h2{
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
 
-	/* body{
-		-webkit-overflow-scrolling: touch;
+	body{
 		overflow: auto;
-	} */
+	}
 
 	.large{
 		flex-flow: column nowrap;
-		/* overflow: auto; */
+		overflow: auto;
 	}
 	
 	.introTop{
