@@ -6,11 +6,14 @@ body{
 	font-weight: 300;
 	max-width: 100%;
 	overflow-x: hidden;
+	overflow-y: auto;
 	font-size: 1em;
 	line-height: 1.5em;
 	margin: 0vw 0vw 1vw 0vw;
 	scrollbar-color: #219ebc #F0ECE3;
+	-webkit-overflow-scrolling: touch;
 }
+
 
 body,html{
 	margin: 0vw;
@@ -706,12 +709,13 @@ h2{
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
 
 	body{
-		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+		overflow: auto;
 	}
 
 	.large{
 		flex-flow: column nowrap;
-		overflow: scroll;
+		/* overflow: auto; */
 	}
 	
 	.introTop{
