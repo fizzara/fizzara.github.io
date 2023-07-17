@@ -705,9 +705,10 @@ h2{
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
 
-	body{
+	/* body{
 		overflow: hidden;
-	}
+	} */
+	
 	.large{
 		flex-flow: column nowrap;
 		overflow: hidden;
