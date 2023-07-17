@@ -705,13 +705,13 @@ h2{
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
 
-	/* body{
-		overflow: hidden;
-	} */
-	
+	body{
+		overflow: auto;
+	}
+
 	.large{
 		flex-flow: column nowrap;
-		overflow: hidden;
+		overflow: auto;
 	}
 	
 	.introTop{
@@ -748,10 +748,10 @@ h2{
 	}
 	
 	.header{
-	  padding: 0vw 1vw;
-	  flex-flow: column nowrap;
-	  justify-content: space-around;
-	  align-items: center;
+		padding: 0vw 1vw;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
 	}	
 	.site-navigation{
 		order: 3;
@@ -865,7 +865,7 @@ h2{
 	}
 	
 	.char-container {
-	  flex-basis: 100%;
+		flex-basis: 100%;
 	}
 	.char-text{
 		flex-basis: 100%;
@@ -901,10 +901,10 @@ h2{
 /*
 @media screen and (orientation: portrait){
 	.header{
-	  padding: 0vw 1vw;
-	  flex-flow: column nowrap;
-	  justify-content: space-around;
-	  align-items: center;
+		padding: 0vw 1vw;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
 	}
 	.site-navigation{
 		order: 3;
