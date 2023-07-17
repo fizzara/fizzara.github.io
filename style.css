@@ -704,6 +704,49 @@ h2{
 	font-size: 1.3em;	
 }
 
+/* CSS for Design page */
+
+.design{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.design-iframe{
+	flex-basis: 55%;
+}
+
+.design-text{
+	flex-basis: 40%;
+	align-self: center;
+	padding: 1em;
+	text-align: left;
+}
+
+
+.slides3{
+	display: none;
+}
+
+.slides4{
+	display: none;
+}
+
+.dot3, .dot4, .dot5, .dot6 {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 5px;
+	background-color: #fecb34;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover {
+	background-color: #ab5403;
+}
+
 /* CSS FOR MEDIA QUERYS */
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
@@ -996,45 +1039,3 @@ h2{
 	}
 }
 
-/* CSS for Design page */
-
-.design{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-}
-
-.design-iframe{
-	flex-basis: 55%;
-}
-
-.design-text{
-	flex-basis: 40%;
-	align-self: center;
-	padding: 1em;
-	text-align: left;
-}
-
-
-.slides3{
-	display: none;
-}
-
-.slides4{
-	display: none;
-}
-
-.dot3, .dot4, .dot5, .dot6 {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 5px;
-	background-color: #fecb34;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover {
-	background-color: #ab5403;
-}
