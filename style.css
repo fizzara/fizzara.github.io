@@ -265,7 +265,7 @@ h2{
 	font-weight: 600;
 }
 
-/* CSS for code page */
+/* CSS for Code page */
 
 .rainbow{
 	display: flex;
@@ -383,6 +383,10 @@ h2{
   background-color: #052c39;
   padding: 0.1em 1em;
   color: white;
+}
+
+.NIL_Images {
+
 }
 
 
@@ -527,17 +531,21 @@ h2{
 .resume-me{
 	display: flex;
 	flex-flow: row wrap;
-	gap: 2em;
+	gap: 1em;
+	justify-content: center;
+
 }
 
 .resume-me-picture{
 	flex-basis: 35%;
+	/* align-self: center; */
 }
 
 .resume-me-text{
 	flex-basis: 60%;
 	margin-top: 0;
 	padding-top: 0;
+	margin-right: 20px;
 }
 
 .resume-container1{
