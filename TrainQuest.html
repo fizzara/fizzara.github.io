@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<title> Fizza Ahmed - TrainQuest </title>
+		<meta name="description" content="Portfolio website for Fizza Ahmed">
+		<meta name="keywords" content="portfolio, artist, toronto, web designer, student, game design">
+		<meta name="author" content="Fizza Ahmed">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+	</head>
+	
+		
+	<body>
+		<div class="header" style="padding: 0.5em 7vw 0.7em 7vw">
+		
+			<span class="name"> <a href="index.html"> fizza ahmed </a></span>
+			
+			<a href="index.html" class="logo-img"> <img src="Images/logosized.png" alt="Fizza Ahmed Logo - Home" style="max-height:2.5em"> </a>
+			
+			<nav id="navigation" class="site-navigation" role="navigation">
+			<li class="headLinks">
+				<div class="dropdown">
+					<span class="header-category" style="border-right: 1px solid white; padding-right: 0.5em"> Works </span>
+					<ul class="dropdown-content">
+						<li><a href="art.html"> Art & Illustration </a></li>
+						<li><a href="code.html"> Code </a></li>
+						<li><a href="design.html"> Design </a></li>
+						<li><a href="game.html"> Game Design </a></li>
+						<li><a href="photography.html"> Photography </a></li>
+						<li><a href="video.html"> Video </a></li>
+					</ul>
+				</div>
+				<a class="header-category" href="resume.html"> Resumé </a>
+			</li>
+			</nav>
+		</div>
+		
+		<div class="works-content thesis">
+			
+			<h1 style="margin-top: 40px"> TRAINQUEST </h1>
+			<h2 style="font-size: 1.5em"> Augmented Reality group project at Toronto Metropolitan University for the program Master of Digital Media under Dr. Naimul Khan </h2>
+			<a href="#prototype"> <p style="font-size: 1em"><i> Jump directly to Final Product </i></p> </a>
+			<p>
+			This game was created over the course of a semester as a group of 6 students. The idea started as a way to keep children interested in physical toys, and in building with their hands. The original concept started as a personal project, where children could use wooden train blocks to build a course, and the application would scan the tracks and display a train the user could customize riding along the tracks. I consulted my professor if this would work for the class, and he suggested that we make it more interactive and for an older audience, as it would be difficult to design for children who wouldn't be able to come in. Thus, the idea for TrainQuest was born.
+			</p>
+			<p> TrainQuest became an engaging and turn-based AR card game. The game puts the two players as the driver or the saboteur, with the driver trying to improve the customer experience (happiness) while the saboteur is trying to destroy it. The game's goal is for the driver to get as much happiness value from the customer as possible at the end of the game, while the saboteur aims to reduce the customer's happiness as much as possible. </p> 
+			<p>To play the game, users place cards on a table and scan them with their devices. These cards are either track cards, advantage/disadvantage cards, or wild cards. Track cards show the game where to place the train model, advantage and disadvantage cards add or remove happiness points, and wild cards each have their own effects. We created a rule sheet to quickly outline a quick start to the game, as seen below. </p>
+			<div style="width:80%; aspect-ratio: 3/2; max-height: 700px"> <embed src="Additional Files/Rules.pdf" width="100%" height="100%">  </div>
+
+
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Storyboarding</i> </h3>
+			
+			<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSiyJILyAPLOMtuJh_zEWMmSVFdFCktik6ZKlEJXdrUDXGTpZXkSlEppBW9I8An2KEbr-1phMNZS1H1/embed?start=false&loop=true&delayms=10000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+			<p> To begin, and as proof of concept, we outlined a storyboard of how the game would work. This included how it would be set up, how turns would work, and how wins and losses would be displayed. We also outlined a Needs Analysis, why AR is used for the game, and a roadmap for the semester. </p>
+			
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Cards</i> </h3>
+			</p>
+			<div class="cards">
+				<div class="photoholder" style="justify-content: flex-start" id="story">
+					<div class="photo">
+						<div class="slideshow-containter">
+							<div class="slides8">
+								<img src="Images/AllTheCards/Track01.jpg" alt="First track card, with railway tracks down the middle and a green border." style="height:400px">
+							</div>
+
+							<div class="slides8">
+								<img src="Images/AllTheCards/Driver07.jpg" alt="Vip Treatment - Driver advantage card, with a man sitting in a train VIP section and a blue border." style="height: 400px">
+							</div>
+
+							<div class="slides8">
+								<img src="Images/AllTheCards/Saboteur01.jpg" alt="Crying Babies - Saboteur disadvantage card, with man holding two crying babies and red border" style="height: 400px">
+							</div>
+
+							<div class="slides8">
+								<img src="Images/AllTheCards/Driver14.jpg" alt="Discounted Tickets - Driver advantage card, with image of happy man in front of money symbol with blue border." style="height: 400px">
+							</div>
+
+							<div class="slides8">
+								<img src="Images/AllTheCards/Saboteur11.jpg" alt="Natural Disaster - Saboteur disadvantage card, with natural disaster depicted and red border." style="height: 400px">
+							</div>
+							<div style="text-align:center">
+								<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+									<span class="dot8" onclick="currentSlide(1, 0)"></span>
+									<span class="dot8" onclick="currentSlide(2, 0)"></span>
+									<span class="dot8" onclick="currentSlide(3, 0)"></span>
+									<span class="dot8" onclick="currentSlide(4, 0)"></span>
+									<span class="dot8" onclick="currentSlide(5, 0)"></span>
+								<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p style="max-width: 60%;"> As this is a card game, obviously cards had to be designed. Each card has an individual but similar design so that they could be recognized by Unity as individual assets. Each card also had a 3D model assigned to it, which would hover over the card to add more fun AR elements to the game. The cards have borders, but no visual numbers. This is to add a further element of AR to the game. Players can scan their own cards to see the value, but never have to worry about their opponent seeing what is in their hand. </p>
+			</div>
+			
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Final Demonstration</i> </h3>
+			<div id="prototype" style="width: 100%; height: 600px">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/_Bvp3hw3xl0?si=v1K_cb6LoIQCZlWy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Final Project Files</i> </h3>
+			<p> View the final project files on <a href="https://github.com/orekizh/TrainQuest0404_02/tree/main">Github</a>. These include the Unity files, C++ code files, and assets.</p>
+
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Final Report</i> </h3>
+			<p> Read our Final Report, detailing our motivation, technical details, lessons learned, and future direction for the project. </p>
+			<div style="width:80%; aspect-ratio: 3/2; max-height: 700px"> <embed src="Additional Files/DG8010_TrainQuest_Report.pdf" width="100%" height="100%">  </div>
+				
+		</div>
+		
+		<br>
+		<script>
+			var slideIndex = [1, 1];
+			var slideId = ["slides8"]
+			var dotsId = ["dot8"]
+			showSlides(1, 0);
+		</script>
+	</body>
+</html>

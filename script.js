@@ -14,13 +14,14 @@ $(window).resize(function() {
 
 
 var slideIndex = [1, 1, 1, 1, 1, 1, 1];
-var slideId = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6", "slides7"]
-var dotsId = ["dot1", "dot2", "dot3", "dot4", "dot5", "slides6", "dot7"]
+var slideId = ["slides1", "slides2", "slides3", "slides4", "slides5", "slides6", "slides7", "slides8"]
+var dotsId = ["dot1", "dot2", "dot3", "dot4", "dot5", "slides6", "dot7", "dot8"]
 showSlides(1, 2);
 showSlides(1, 3);
 showSlides(1, 4);
 showSlides(1, 5);
 showSlides(1, 6);
+showSlides(1, 7);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
