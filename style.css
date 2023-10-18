@@ -740,7 +740,11 @@ h2{
 	display: none;
 }
 
-.dot3, .dot4, .dot5, .dot6 {
+.slides7{
+	display: none;
+}
+
+.dot3, .dot4, .dot5, .dot6, .dot7 {
 	cursor: pointer;
 	height: 15px;
 	width: 15px;
@@ -751,7 +755,7 @@ h2{
 	transition: background-color 0.6s ease;
 }
 
-.dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover {
+.dot3:hover, .dot4:hover, .dot5:hover, .dot6:hover, .dot7:hover {
 	background-color: #ab5403;
 }
 
