@@ -569,6 +569,13 @@ h2{
 	padding: 0em 1em;
 }
 
+.resume-education a{
+	color: black;
+}
+.resume-education a:hover{
+	color: #219ebc;
+}
+
 .resume-skills{
 	text-align: left;
 	display: flex;
@@ -784,6 +791,13 @@ h2{
 .game-text{
 	flex-basis: 45%;
 	align-self: center;
+}
+
+/* CSS FOR THESIS PAGE */
+.thesis-interface{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
 
 /* CSS FOR MEDIA QUERYS */

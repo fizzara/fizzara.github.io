@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<title> Fizza Ahmed - Master's Thesis </title>
+		<meta name="description" content="Portfolio website for Fizza Ahmed">
+		<meta name="keywords" content="portfolio, artist, toronto, web designer, student, game design, accessibility, haptic feedback">
+		<meta name="author" content="Fizza Ahmed">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+	</head>
+	
+		
+	<body>
+		<div class="header" style="padding: 0.5em 7vw 0.7em 7vw">
+		
+			<span class="name"> <a href="index.html"> fizza ahmed </a></span>
+			
+			<a href="index.html" class="logo-img"> <img src="Images/logosized.png" alt="Fizza Ahmed Logo - Home" style="max-height:2.5em"> </a>
+			
+			<nav id="navigation" class="site-navigation" role="navigation">
+			<li class="headLinks">
+				<div class="dropdown">
+					<span class="header-category" style="border-right: 1px solid white; padding-right: 0.5em"> Works </span>
+					<ul class="dropdown-content">
+						<li><a href="art.html"> Art & Illustration </a></li>
+						<li><a href="code.html"> Code </a></li>
+						<li><a href="design.html"> Design </a></li>
+						<li><a href="game.html"> Game Design </a></li>
+						<li><a href="thesis.html"> Master's Thesis </a><li>
+						<li><a href="photography.html"> Photography </a></li>
+						<li><a href="video.html"> Video </a></li>
+					</ul>
+				</div>
+				<a class="header-category" href="resume.html"> Resumé </a>
+			</li>
+			</nav>
+		</div>
+		
+		<div class="works-content thesis">
+			
+			<h1 style="margin-top: 40px; line-height: 1.2em;"> SOMATOSENSORY INTERFACE FOR THE IMMERSION OF PLAYERS WITH VISUAL
+				IMPAIRMENTS </h1>
+			<h2 style="font-size: 1.5em"> A Major Research Project presented to Toronto Metropolitan University in partial fulfilment of the requirements for the degree of Digital Media in the program of Master of Digital Media </h2><h2 style="font-size: 1.5em"> Supervisor: Dr. David Chandross </h2>
+			<p style="font-size: 1em"><a href="#prototype"><i> Jump directly to Final Report and Product </i></a></p> 
+			<p style="line-height: 1.2em"> <i>Abstract:</i><br> Accessibility in gaming is crucial for fostering inclusivity, empowering individuals with
+				disabilities, promoting social connections, and driving innovation. While there is
+				currently a societal push for changes in software to increase accessibility, there are
+				limits to the accessibility that software on its own can provide. We must combine
+				software with hardware to ensure comprehensive accessible solutions. This project
+				combines software and hardware to create a gamepad that returns vibrational feedback
+				from detected changes on screen in the game Undertale. Using computer vision, the
+				software of the project detects player movements as well as enemy movements. Using
+				an array of vibration motors, the player receives haptic feedback of enemy proximity
+				through the gamepad. This translates what would normally be only visual or audible
+				stimulus to include another sense, giving the player more information to act upon and
+				allowing for quicker response and fuller immersion.
+			</p>
+			<p style="line-height: 1.2em"> This project leverages the idea of implementing accessibility in entertainment
+				spaces to make them easier and more enjoyable. It involves the creation of a pad like
+				interface with embedded vibration motors. The primary focus of these motors is to
+				provide the player with navigational information while playing games, although they
+				can be leveraged for other purposes. The gamepad combines software and hardware to
+				allow for a comprehensive accessible solution. It is designed to work with the game
+				Undertale, an RPG in which the player is a lone human who falls into an underground
+				world filled with monsters. The	gamepad and its software detect on screen changes in the game and translate them into
+				vibrotactile signals, which the player interprets to navigate the game. </p> 
+			
+
+			
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Idea Conception</i> </h3>
+			<p> This project began as an exploration between my supervisor and myself. I wanted to create something that could have a tangible impact and use, and something that could create accessibility in games. We began by brainstorming various methods we could make video game playing easier for various disabilities. One idea that caught both of us was a braille pad, similar to the <a href="https://metec-ag.de/en/produkte-graphik-display.php">HyperBraille</a> display. I could use this type of display to return information to players with visual impairments. The player could keep their hands on the pad, and it would return enemy locations as singular dots, or descriptive text as braille for cutscenes. Unfortunately, as I began to research this idea, I hit a few roadblocks. First, using a HyperBraille system would not work. For one, they are very expensive. Using the HyperBraille display also returned the problem of how would players control their game? There is no room for buttons on the display, and so players would be constantly taking their hands off the controls to see where everything is. Of course I could potentially create my own braille display that leaves room for buttons, but creating a full braille display was far beyond my abilities. </p>
+			<p> What I had to do was simplify the concept, and after some research I came up with a haptic interface that has controller buttons and returns directional vibrations to the user as feedback on locations in a 2D space.</p>
+
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Interface</i> </h3>
+			<div class="thesis-interface">
+				<img style="flex-basis: 30%; width:300px" src="Images/Interface.jpg">
+				<div style="flex-basis: 60%; padding-top: 10px;">
+					<p > This is a diagram of the interface. It displays the location of buttons and vibration motors on the interface itself. The vibration motors are coin motors placed in the four corners and center. These can work together to buzz different patterns based on the information they are getting from the computer. For example, if the message was sent that there is an enemy in the top right, the top right motor would buzz sharply to get the players attention. If the player had reached the edge of the play area on the bottom, the motors could pulse softly using PWM to let the player know this information. 
+					</p>
+					<p>
+					These motors could also be used with what is called the Body-Braille System to return more detailed information to the user. The Body-Braille system uses vibrations to return Braille characters to their user. It does so by returning 2 distinct vibrations, 3 times. It does this to follow the dots of a Braille character. It will (or will not) pulse on two distinct vibration motors 3 times to allow the user to know if there is a dot or not. This system could be used by the device for simple quick information, such as a quick time event (in which a player will have to press a specific button quickly). Theoretically it could also be used for longer descriptions, although that would be better grasped by the TTS portion of the project.	
+					</p>
+					<p> The vibrations of the motors are controlled by an Arduino. The program use PWM (pulse width modulation) to create a variety of vibrations to signify different things, as stated above. It also uses length of vibration to communicate. These are all plugged into the Arduino through a breadboard. This setup allows for quick prototyping, and the potential addition of more informational tools. Perhaps it could be customized for a user with partial vision, who can distinguish LEDs. This could be an addition that gives the player more versatility. It could also be used for adding more vibrational motors, which could give a more immersive experience of in game collision, or more specific information.
+					</p>
+					<p> Through the interface diagram we can see how the physical connects to the digital. I was fortunate enough to be able to borrow the school's Xbox Adaptive Controller for this project. The Xbox Adaptive Controller is an incredible piece of technology. It acts as a modular controller, fully customizable through the use of the 3.5mm jacks in the controller's body. Any form of switch can be plugged into the controller to represent the different inputs, and this controller simplified the project quite a bit, preventing me from needing to code another program. The buttons and joystick from the interface plugged into the Adaptive Controller which in turn connected to the computer and game to allow easy control. 
+					</p>
+				</div>
+			</div>
+			
+
+
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Final Project Files</i> </h3>
+			<p> View the final project files on <a href="https://github.com/fizzara/SI-Software">Github</a>. These include the Python files, Tesseract Files, and Arduino Files.</p>
+			
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Final Demonstration</i> </h3>
+			<div id="prototype" style="width: 100%; height: 600px; text-align: center;">
+			<iframe width="80%" height="100%" src="https://www.youtube.com/embed/p6KeENQwx00?si=Rmiybe6TBzaOx5Wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+			<p> This video shows the final state of the project's Python code. It leverages computer vision to translate on screen changes into haptic feedback for the player to detect and use to decide their next moves. Using OpenCV, Python detects when the player is in a fight, and when they are using the dialogue menu. Depending on the state, it will do different things. If the player is using the menu, it will use Tesseract OCR to read the user's current selection to text, and then Google Text to Speech (gTTS) to turn the text into audio. Using the OCR to live read the text cuts down on prep time and allows the program to be versatile for other game uses, rather than forcing the creator to type out every word.</p>
+			<p> Tesseract OCR had to be trained to recognize the Undertale font. This was done through a series of images of various sentences in the Undertale font being run through a box creator. These files were then edited and inputed into Tesseract OCR as another language. Eventually, the program was able to accurately recognize characters to return any text in this font</p>
+			<p> When the player is in a fight, OpenCV is used to detect the player character, the enemy locations, and the border of the box. It then draws border boxes around the player and box to demonstrate this. The program would then actively work to convert proximity information into vibrations on the interface. As the fight consists of dodging, the only feedback needed for this part is where are the enemies, and is the character at the edge of the space. There is one more vibrational return, which is used when the player attacks the enemy. It returns a strong vibration right before the line hits the target to let the player know when to press the attack button. </p>
+
+
+			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Final Report</i> </h3>
+			<p> Read my Major Research Paper for the project. This details every inch of the project, including: a review of current accessibility practices, a review of how haptics are registered by and affect the human body, my methodology, continuations for the project in it's current form, and further potential adaptations. </p>
+			<div style="width:100%; aspect-ratio: 3/2; max-height: 700px; text-align: center;"> <embed src="Additional Files/2023_Ahmed, Fizza.pdf" width="80%" height="100%">  </div>
+		</div>
+		
+		<br>
+		<script>
+			var slideIndex = [1, 1];
+			var slideId = ["slides8"]
+			var dotsId = ["dot8"]
+			showSlides(1, 0);
+		</script>
+	</body>
+</html>
