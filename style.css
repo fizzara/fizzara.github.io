@@ -14,6 +14,12 @@ body{
 	/* -webkit-overflow-scrolling: touch; */
 }
 
+hr{
+	margin: 30px 0px; 
+	border: dashed; 
+	border-width: 1px; 
+	border-color: #219ebc;
+}
 
 body,html{
 	margin: 0vw;
@@ -265,6 +271,7 @@ h2{
 	font-weight: 600;
 }
 
+
 /* CSS for Code page */
 
 .rainbow{
@@ -385,6 +392,12 @@ h2{
   color: white;
 }
 
+
+.NIL_Images{
+	display: flex; 
+	flex-flow: row wrap; 
+	margin-bottom: 20px;
+}
 
 
 /* CSS for video page */
@@ -785,7 +798,7 @@ h2{
 
 .game-preview{
 	flex-basis: 45%;
-	min-height: 400px;
+	min-height: 250px;
 }
 
 .game-text{
@@ -798,6 +811,37 @@ h2{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
+}
+
+
+/*CSS FOR FOOTER*/
+
+.footer{
+	color: white;
+	background-color: #975074;
+	margin-bottom: 0px;
+	padding: 10px 10px 1vw 10px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.footer ul{
+	list-style-type:none;
+	padding-left: 0px;
+}
+
+.footer a{
+	color: white;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #FECB34;
+	text-decoration: underline;
+}
+
+#linkedimg{
+	filter: invert(100%);
 }
 
 /* CSS FOR MEDIA QUERYS */
@@ -930,6 +974,17 @@ h2{
 		text-align: left;
 	}
 
+	.game-holder{
+		margin-top: 20px;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+	}
+
+	.game-text{
+		padding: 0px 10px;
+	}
+
 }
 
 
@@ -1010,13 +1065,18 @@ h2{
 }
 
 
-@media screen and (max-width: 1400px) and (min-width: 1151px){
+@media screen and (min-width: 1151px){
 	.timeline{
 		flex-basis: 33%;
 	}
 	
 	.resume-info{
 		flex-basis: 66%;
+	}
+
+	.footer{
+		justify-content: center;
+		gap: 10vw;
 	}
 }
 
