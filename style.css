@@ -1146,9 +1146,9 @@ h2{
 
 
 
-@media screen and (min-width: 2300px){
+@media screen and (min-width: 2000px){
 	.resume-content, .works-content{
-		margin: 1vh 7vw;
+		margin: 1vh 15vw;
 	}
 	.header{
 		padding: 0vw 7vw;
