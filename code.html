@@ -84,7 +84,7 @@
 			</div>
 			<hr style="margin: 30px 0px; border: dashed; border-width: 1px; border-color: #219ebc;">
 			<h2> HTML Coding </h2>
-			<div class="html-code">
+			<div id="html-code" class="html-code">
 				<h3 style="font-size: 1.5em"> <b>Networked Imagination Laboratory</b></h3> 
 				<p> I coded the new website for the Networked Imagination Laboratory at McMaster University from scratch. Working with the laboratory's director, I created a responsive website that advertized all aspects
 					of the lab and was responsive as well as accessible. View the <a href="https://nil.mcmaster.ca"> Networked Imagination Laboratory website here. </a>
@@ -97,13 +97,13 @@
 					used. The website code is appropriately tagged, and the images are either marked decorative or have the appropriate descriptive text. 
 				<div>
 					<div class="NIL_Images">
-						<img src="Images/NIL/Screenshot 2023-08-30 144448.png" style="max-width: 40%">
-						<p style="margin-left: 20px; flex-basis: 50%"> 
+						<img class="NIL_screengrab" src="Images/NIL/Screenshot 2023-08-30 144448.png">
+						<p style="flex-basis: 50%"> 
 							The equipment page displays all equipment available in the Networked Imagination Laboratory. It includes both a visual layout, and a full list. The list is colour coded to match with the shapes in the visual layout, to simplify viewing. The visual layout uses Javascript to allow users to mouse over shapes in the SVG and view exactly what item is where. This has the added benefit of adding another method other than colour coding for visitors to connect shapes to objects. The visual layout is marked as decorative to allow screen readers to be directed to the list instead, to avoid unnecessary information. </p>
 					</div>
 					<div class="NIL_Images">
-						<img src="Images/NIL/Screenshot 2023-08-30 144526.png" style="max-width: 40%">
-						<p style="margin-left: 20px; flex-basis: 50%"> 
+						<img class="NIL_screengrab" src="Images/NIL/Screenshot 2023-08-30 144526.png">
+						<p style="flex-basis: 50%"> 
 							The Orchestra page of the website is meant to display the NIL's Cybernetic Orchestra's previous work. It includes embeds of video and audio of their album, as well as a diary of their past performances, with links where they exist. The embeds allow visitors to view the work in page, preventing the added work of opening other sites and keeping the visitor engaged, rather than sending them away. Again, the page was styled after the program used by the Cybernetic Orchestra, with the album being in a box similar to how each orchestra member would have their designated box.
 						</p>
 					</div>
@@ -120,25 +120,25 @@
 		</div>
 		<br>
 
-		<!-- <div class="footer">
-			<p style="font-size: 2em"> fizza ahmed </p>
+		<div class="footer">
+			<div class="footer_name" style="display: flex; gap: 10px; font-size: 2em; align-self: center; align-items: center; font-size: 2em"> <img src="Images/logosized.png" style="max-width: 50px"> fizza ahmed </div>
 			<div class="footer_jump">
-				<p> Jump To </p>
+				<p style="margin: 0px;"> Jump To </p>
 				<ul>
-					<li>Resume</li>
-					<li>A Random Project</li>
-					<li>Master's Thesis</li>
+					<li><a href="resume.html">My Resume</a></li>
+					<li><a onclick="footerJump()">A Random Project</a></li>
+					<li><a href="thesis.html">My Master's Thesis</a></li>
 				</ul>
 			</div>
 			<div class="footer_reach">
-				<p> Reach out by </p>
+				<p style="margin: 0px;"> Reach out by </p>
 				<ul>
 					<li id="foot_email"><a href="mailto:fizzaahmed2000@hotmail.com"> &#9993; Email</a></li>
 					<li id="foot=linked"><a href="linkedin.com/in/fizzara"><img id="linkedimg" src="Images/LinkedInLogo.png" alt="" style="max-width: 15px; align-self: baseline;"> LinkedIn</a></li>
+					<li id="foot=linked"><a href="https://www.youtube.com/channel/UCSZhhVlvhqYkC6wKqXHKzYA"><img id="linkedimg" src="Images/ytlogo.png" alt="" style="max-width: 15px; align-self: baseline;"> Youtube</a></li>
 				</ul>
 			</div>
-
-		</div> -->
+		</div> 
 	</body>
 	
 </html>

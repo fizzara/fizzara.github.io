@@ -78,3 +78,10 @@ function displaySlides(n) {
   dots[charSlideIndex-1].className += " active";
   captionText.innerHTML = dots[charSlideIndex-1].alt;
 }
+
+
+function footerJump(){
+  arr = ["video.html#tlou", "video.html#rube", "art.html", "code.html", "code.html#html-code", "photography.html", "Memories.html", "TrainQuest.html", "DauDesignDoc.html", "design.html#web-design", "design.html"];
+  j = Math.floor(Math.random() * (arr.length-1));
+  window.location.href = arr[j];
+}

@@ -79,7 +79,10 @@
 
 			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Interface</i> </h3>
 			<div class="thesis-interface">
-				<img style="flex-basis: 30%; width:300px" src="Images/Interface.jpg">
+				<div style="text-align: center; align-items: center;">
+					<img style="flex-basis: 30%; max-width: 45%" src="Images/Interface.jpg">
+					<img style="flex-basis: 30%; max-width: 45%" src="Images/Interface_Picture.jpg">
+				</div>
 				<div style="flex-basis: 60%; padding-top: 10px;">
 					<p > This is a diagram of the interface. It displays the location of buttons and vibration motors on the interface itself. The vibration motors are coin motors placed in the four corners and center. These can work together to buzz different patterns based on the information they are getting from the computer. For example, if the message was sent that there is an enemy in the top right, the top right motor would buzz sharply to get the players attention. If the player had reached the edge of the play area on the bottom, the motors could pulse softly using PWM to let the player know this information. 
 					</p>
@@ -118,5 +121,25 @@
 			var dotsId = ["dot8"]
 			showSlides(1, 0);
 		</script>
+
+		<div class="footer">
+			<div class="footer_name" style="display: flex; gap: 10px; font-size: 2em; align-self: center; align-items: center; font-size: 2em"> <img src="Images/logosized.png" style="max-width: 50px"> fizza ahmed </div>
+			<div class="footer_jump">
+				<p style="margin: 0px;"> Jump To </p>
+				<ul>
+					<li><a href="resume.html">My Resume</a></li>
+					<li><a onclick="footerJump()">A Random Project</a></li>
+					<li><a href="thesis.html">My Master's Thesis</a></li>
+				</ul>
+			</div>
+			<div class="footer_reach">
+				<p style="margin: 0px;"> Reach out by </p>
+				<ul>
+					<li id="foot_email"><a href="mailto:fizzaahmed2000@hotmail.com"> &#9993; Email</a></li>
+					<li id="foot=linked"><a href="linkedin.com/in/fizzara"><img id="linkedimg" src="Images/LinkedInLogo.png" alt="" style="max-width: 15px; align-self: baseline;"> LinkedIn</a></li>
+					<li id="foot=linked"><a href="https://www.youtube.com/channel/UCSZhhVlvhqYkC6wKqXHKzYA"><img id="linkedimg" src="Images/ytlogo.png" alt="" style="max-width: 15px; align-self: baseline;"> Youtube</a></li>
+				</ul>
+			</div>
+		</div> 
 	</body>
 </html>

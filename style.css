@@ -122,6 +122,11 @@ h2{
 	justify-content: center;
 }
 
+.introItemDiv a{
+	text-decoration: none; 
+	color: white;
+}
+
 #indexLogo{
 	max-width: 10vw;
 }
@@ -397,8 +402,12 @@ h2{
 	display: flex; 
 	flex-flow: row wrap; 
 	margin-bottom: 20px;
+	gap: 20px;
 }
 
+.NIL_screengrab{
+	width: 40%;
+}
 
 /* CSS for video page */
 .vid{
@@ -809,7 +818,7 @@ h2{
 /* CSS FOR THESIS PAGE */
 .thesis-interface{
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: space-evenly;
 }
 
@@ -820,10 +829,11 @@ h2{
 	color: white;
 	background-color: #975074;
 	margin-bottom: 0px;
-	padding: 10px 10px 1vw 10px;
+	padding: 20px 10px 0.5vw 10px;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	gap: 100px;
 }
 
 .footer ul{
@@ -838,6 +848,17 @@ h2{
 .footer a:hover{
 	color: #FECB34;
 	text-decoration: underline;
+}
+
+
+.footer_name{
+	order: 1;
+}
+.footer_jump{
+	order: 2;
+}
+.footer_reach{
+	order: 3;
 }
 
 #linkedimg{
@@ -963,6 +984,7 @@ h2{
 		flex-basis: 70%;
 	}
 
+
 	.design-iframe{
 		flex-basis: 100%;
 	}
@@ -985,6 +1007,23 @@ h2{
 		padding: 0px 10px;
 	}
 
+	.footer{
+		gap: 20px;
+	}
+
+	.footer_name{
+		order: 3;
+		padding-bottom: 2vh;
+	}
+	.footer_jump{
+		margin: 0vw 10vw;
+		order: 1;
+	}
+	.footer_reach{
+		margin: 0vw 10vw;
+		padding-top: 0;
+		order: 2;
+	}
 }
 
 
@@ -1019,6 +1058,18 @@ h2{
 	}
 	.resume-content{
 		flex-flow: row wrap;
+	}
+
+	
+	.NIL_Images{
+		display: flex; 
+		flex-flow: column wrap; 
+		margin-bottom: 20px;
+		gap: 0px;
+	}
+
+	.NIL_screengrab{
+		width: 100%;
 	}
 	
 	.info-image{
