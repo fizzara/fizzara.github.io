@@ -13,6 +13,37 @@ body{
 	scrollbar-color: #219ebc #F0ECE3;
 	/* -webkit-overflow-scrolling: touch; */
 }
+/* CSS to change website scrollbar on chrome*/
+::-webkit-scrollbar {
+	width: 1em;
+}
+
+::-webkit-scrollbar-track {
+	background: #F0ECE3;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #219ebc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #243143;
+}
+
+
+/* ::-webkit-scrollbar-button:decrement { 
+    height: 14px;
+    background: url("Images/Arrow.png") no-repeat;	
+	border-bottom: 1px solid #F0ECE3;
+	background-color: #F0ECE3;
+}
+	
+::-webkit-scrollbar-button:increment  {
+	height: 14px;
+	background: url("Images/Arrow2.png") no-repeat;	
+	background-color: #F0ECE3;
+} */
+
 
 hr{
 	margin: 30px 0px; 
@@ -44,41 +75,6 @@ h2{
 h3{
 	font-size: 1.5em;
 }
-
-/* CSS to change website scrollbar */
-/* ::-webkit-scrollbar {
-	width: 15px;
-}
-
-::-webkit-scrollbar-track {
-	background: #F0ECE3;
-}
-
-::-webkit-scrollbar-thumb {
-	background: #219ebc;
-	/* border-radius: 50px; */
-	/*box-shadow: 0 2 6px rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #243143;
-} */
-
-/* ::-webkit-scrollbar-button:decrement { 
-    height: 14px;
-    background: url("Images/Arrow.png") no-repeat;	
-	border-bottom: 1px solid #F0ECE3;
-	background-color: #F0ECE3;
-}
-	
-::-webkit-scrollbar-button:increment  {
-	height: 14px;
-	background: url("Images/Arrow2.png") no-repeat;	
-	background-color: #F0ECE3;
-}
- */
-
-
 
 /* CSS for Intro Page */
 
@@ -310,12 +306,13 @@ h3{
 	display: flex;
 	flex-wrap: nowrap;
 	gap: 20px;
-	overflow-x: scroll;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 .codepen-ex{
     flex: 0 0 auto;
-	width: 47%;
+	width: 50%;
 }
 
 .codepen-text{
