@@ -129,7 +129,7 @@ h3{
 
 .introItemDiv a{
 	text-decoration: none; 
-	color: white;
+	color: rgb(243, 229, 210);
 }
 
 #indexLogo{
@@ -306,14 +306,20 @@ h3{
 	text-align: left;
 }
 
-.codepen{
+.codepen-carousel{
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	flex-wrap: nowrap;
+	gap: 20px;
+	overflow-x: scroll;
 }
 
 .codepen-ex{
+    flex: 0 0 auto;
 	width: 47%;
+}
+
+.codepen-text{
+	display: block;
 }
 
 .html-code{
