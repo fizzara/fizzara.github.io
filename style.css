@@ -980,7 +980,6 @@ button{
 	border: 3px solid #243143;
 	padding: 10px;
 	background: #f0ece3;
-	width: 80%;
 	margin-bottom: 10px;
 	transition: 0.5s;
 }
@@ -1457,6 +1456,7 @@ textarea:focus{
 	.contact-tester{
 		padding-left: 10%;
 	}
+	
 	.resume-content, .works-content{
 		margin: 1vh 15vw;
 	}
