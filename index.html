@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 	<head>
 	
@@ -7,6 +7,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
 		<script type="text/javascript" src="script.js"></script>
 		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<script src="https://kit.fontawesome.com/f1c27a6a68.js" crossorigin="anonymous"></script>
 		<title> Fizza Ahmed </title>
 		<meta name="description" content="Portfolio website for Fizza Ahmed">
 		<meta name="keywords" content="portfolio, artist, toronto, web designer, student, game design">
@@ -22,7 +23,7 @@
                 <h1 class="introTop fade" id="nameChange" style="margin:0">.fizzara</h1>
             </div>
             <div class="introItems">
-                <div class="introItemDiv" onclick="jumpTo(), fadeOut();">
+                <div class="introItemDiv" onclick="jumpTo();">
                     <img src="Images/lookingfor/van.png" alt="" class="randimg fade">
                     <img src="Images/lookingfor/rainbow.png" alt="" class="randimg fade">
                     <img src="Images/lookingfor/drowning.png" alt="" class="randimg fade">
@@ -30,13 +31,13 @@
                     <h2 class="fade">View A Random Project</h2>
                 </div>
 
-                <div class="introItemDiv"><a href="resume.html">
+                <div class="introItemDiv"><a href="https://fizzara.github.io/resume">
                     <img src="Images/lookingfor/me.png" alt="" class="meimg fade">
                     <h2 class="fade">View My Resumé</h2></a>
                 </div>
             </div>
-            <a class="fade" href="https://www.linkedin.com/in/fizzara" style="color: white; text-decoration: none; "><p style="font-weight: 400; margin-top: 4px"> <img src="Images/LinkedInLogo.png" alt="" style="max-width: 20px; filter: invert(1)">  Connect with me on LinkedIn </p> </a> 
-            <a class="fade" href="mailto:fizzaahmed2000@hotmail.com" style="color: white; text-decoration: none;"><p style="font-weight: 400; margin-top: 4px"> &#9993; Reach out directly by Email </p></a>
+            <a class="fade" href="https://www.linkedin.com/in/fizzara" style="color: white; text-decoration: none;"><p style="font-weight: 400; margin-top: 4px"> <i class="fa-brands fa-linkedin"></i>  Connect with me on LinkedIn </p> </a> 
+            <a class="fade" href="mailto:fizzaahmed2000@hotmail.com" style="color: white; text-decoration: none;"><p style="font-weight: 400; margin-top: 4px"> <i class="fa-regular fa-paper-plane"></i> Reach out directly by Email </p></a>
         </div>
 
         <script>
@@ -66,15 +67,15 @@
                 setTimeout(funky, 2000);
             }
 
-            function choose(){
-                cso = document.querySelector(".choose");
-                console.log(cso);
-                arr = [".", "..", "..."];
-                if(i>arr.length)i=0;
-                cso.textContent = arr[i];
-                i++;
-                setTimeout(choose, 800);
-            }
+            // function choose(){
+            //     cso = document.querySelector(".choose");
+            //     console.log(cso);
+            //     arr = [".", "..", "..."];
+            //     if(i>arr.length)i=0;
+            //     cso.textContent = arr[i];
+            //     i++;
+            //     setTimeout(choose, 800);
+            // }
             
             function imgChange(){
                 if(runrun){
@@ -91,9 +92,7 @@
 
             function jumpTo(){
                 arr = ["video.html#tlou", "video.html#rube", "art.html", "code.html", "code.html#html-code", "photography.html", "Memories.html", "TrainQuest.html", "DauDesignDoc.html", "design.html#web-design", "design.html", "resume.html"]
-                if(!resume){
-                    j = Math.floor(Math.random() * (arr.length-1));
-                }else{j = arr.length-1;}
+                j = Math.floor(Math.random() * (arr.length-1));
                 fadeOut();
             }
 
@@ -115,7 +114,7 @@
                     opac -= 0.01;
                     setTimeout(fadeOut, 10);
                 }
-                setTimeout(() => { window.location.href = arr[j]; }, 2100);
+                setTimeout(() => { window.location.href = arr[j]; }, 1700);
             }
 
             

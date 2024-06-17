@@ -76,6 +76,11 @@ h3{
 	font-size: 1.5em;
 }
 
+button{
+	background: none;
+	border: none;
+}
+
 /* CSS for Intro Page */
 
 .large{
@@ -872,14 +877,157 @@ h3{
 	justify-content: space-evenly;
 }
 
+/* CSS FOR CONTACT PAGE */
+.intouch{
+	text-decoration: none;
+	text-align: center;
+	margin: none;
+	padding: none;
+	order: 10;
+	line-height: 1em;
+}
+.contact-works-content{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	min-height: 75vh;
+	background-color: #803d5f;
+}
 
-/*CSS FOR FOOTER*/
+.contact-content{
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 2vw;
+	align-items: center;
+	margin: none 7vw;
+	width: 70%;
+	background-color: #F0ECE3;
+	border-radius: 50px;
+	padding: 0px 2.5vw 0px 0px;
+}
+
+
+.contact-content button:hover{
+	cursor: pointer;
+}
+
+.contact-tester{
+	color: white;
+	height: 100%;
+	background-color: #43354c;
+	flex-basis: 40%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding-left: 1.5em;
+	border-radius: 10px 0px 0px 10px;
+}
+
+.contact-tester a{
+	color: white;
+	text-decoration: underline 3px #FECB34;
+	transition: 0.5s;
+}
+
+.contact-links{
+	cursor: pointer;
+}
+
+.contact-links:hover a{
+	text-decoration-color: #ab5403;
+}
+
+.contact-links i{
+	padding-right: 1em;
+	color: #FECB34;
+	transition: 0.5s;
+}
+
+.contact-links:hover i{
+	color: #ab5403;
+}
+
+#myPhone{
+	cursor: default;
+}
+
+.contact-buttons{
+	flex-basis: 35%;
+	padding: 0px 7.5%;
+}
+
+.contact-form-holder{
+	margin: none;
+	flex-basis: 60%;
+	font-weight: 400;
+	padding: 0px 7.5%;
+}
+
+.contact-form{
+	display: flex;
+	flex-flow: column nowrap;
+	font-size: 1.2em;
+	margin-bottom: 2vh;
+}
+
+.contact-form label{
+	padding-left: 3px;
+	margin-bottom: 5px;
+}
+
+.contact-form input{
+	/* border-radius: 20px; */
+	border: 3px solid #243143;
+	padding: 10px;
+	background: #f0ece3;
+	width: 80%;
+	margin-bottom: 10px;
+	transition: 0.5s;
+}
+
+#jobOp, #network, #freelance, #intern, #ment, #linked{
+	width: 25px;
+	height: 25px;
+}
+
+.contact-form input:focus{
+	background-color: #dbd8d0;
+	border-color: #803d5f;
+	border-radius: 10px;
+	outline: none;
+}
+
+textarea{
+	border: 3px solid #243143;
+	padding: 5px;
+	height: 10vh; 
+	font-size: 16px;
+	background: #f0ece3;
+}
+
+textarea:focus{
+	background-color: #dbd8d0;
+	border-color: #803d5f;
+	border-radius: 5px;
+	outline: none;
+}
+
+#submit{
+	cursor: pointer;
+	margin-top: 15px;
+	width: 50%;
+}
+
+
+
+/* CSS FOR FOOTER */
 
 .footer{
 	color: white;
-	background-color: #975074;
+	background-color: #803d5f;
 	margin-bottom: 0px;
 	padding: 20px 10px 0.5vw 10px;
+	font-weight: 400;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
@@ -918,6 +1066,30 @@ h3{
 /* CSS FOR MEDIA QUERYS */
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
+
+	.contact-content{
+		flex-flow: column nowrap;
+		margin: none;
+		width: 100%;
+		background-color: #F0ECE3;
+		border-radius: 30px 30px 20px 0px;
+		padding: 0px 2.5vw 5vw 0px;
+	}
+	
+	.contact-tester{
+		width: inherit;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		border-radius: 20px 10px 10px 20px;
+		align-items: flex-start;
+	}
+	.contact-form input{
+		padding: 20px;
+		font-size: 1em;
+	}
 
 	body{
 		overflow: auto;
@@ -1081,9 +1253,38 @@ h3{
 	}
 }
 
-
 @media screen and (max-width: 1150px){
+	.contact-content{
+		flex-flow: column nowrap;
+		margin: none;
+		width: 100%;
+		background-color: #F0ECE3;
+		border-radius: 30px 30px 20px 0px;
+		padding: 0px 2.5vw 5vw 0px;
+	}
 	
+	.contact-tester{
+		width: inherit;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		border-radius: 20px 10px 10px 20px;
+		align-items: center;
+	}
+
+	.contact-tester a{
+		color: white;
+		text-decoration: underline 1px #FECB34;
+		transition: 1s;
+	}
+
+	.contact-form input{
+		padding: 15px;
+		font-size: 1em;
+	}
+
 	.rainbow{
 		flex-flow: column nowrap;
 	}
@@ -1253,6 +1454,9 @@ h3{
 
 
 @media screen and (min-width: 2000px){
+	.contact-tester{
+		padding-left: 10%;
+	}
 	.resume-content, .works-content{
 		margin: 1vh 15vw;
 	}

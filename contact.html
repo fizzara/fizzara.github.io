@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="script.js"></script>
+		<script src="https://kit.fontawesome.com/f1c27a6a68.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<title> Fizza Ahmed - Contact </title>
+		<meta name="description" content="Portfolio website for Fizza Ahmed">
+		<meta name="keywords" content="portfolio, artist, toronto, web designer, student, game design">
+		<meta name="author" content="Fizza Ahmed">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+	</head>
+	
+		
+	<body>
+		<div class="header" style="padding: 0.5em 7vw 0.7em 7vw; flex-flow: column nowrap; align-items: center;">
+		
+			
+			<a href="index.html" class="logo-img" > <img src="Images/logosized.png" alt="Fizza Ahmed Logo - Home" style="max-height:2.5em"> </a>
+			<h1 class="intouch" id="nameChange" style="font-size: 1.5em; margin-bottom: 0px; ">.fizzara</h1>
+			<!-- <h2 class="intouch" style="font-size: 1em;"> Programmer, Designer, Artist </h2> -->
+
+			<!-- <nav id="navigation" class="site-navigation" role="navigation">
+			<li class="headLinks">
+				<div class="dropdown">
+					<span class="header-category" style="border-right: 1px solid white; padding-right: 0.5em"> Works </span>
+					<ul class="dropdown-content">
+						<li><a href="art.html"> Art & Illustration </a></li>
+						<li><a href="code.html"> Code </a></li>
+						<li><a href="design.html"> Design </a></li>
+						<li><a href="game.html"> Game Design </a></li>
+						<li><a href="thesis.html"> Master's Thesis </a><li>
+						<li><a href="photography.html"> Photography </a></li>
+						<li><a href="video.html"> Video </a></li>
+					</ul>
+				</div>
+				<a class="header-category" href="resume.html"> Resumé </a>
+			</li>
+			</nav> -->
+		</div>
+		
+		<div class="contact-works-content">
+			<div class="contact-content">
+				<div class="contact-tester">
+					<p class="contact-links"><a href="https://fizzara.github.io"><i class="fa-solid fa-window-maximize"></i>View My Portfolio Website </a></p>
+					<p class="contact-links"><i class="fa-regular fa-paper-plane"></i><a href="mailto:fizzaahmed2000@hotmail.com">fizzaahmed2000@hotmail.com </a></p>
+					<p class="contact-links" ><i class="fa fa-phone"></i><a href="#" id="myPhone">(647) 866 - 1315</a></p>
+					<p class="contact-links"><i class="fa-brands fa-linkedin"></i><a href="linkedin.com/in/fizzara">My LinkedIn </a></p>
+					<p class="contact-links"><i class="fa-regular fa-address-card"></i><a href="#" onclick="window.open('Additional Files/AhmedF_Resume.pdf')">My Resumé </a></p>
+					
+				</div>
+				<div class="contact-form-holder">
+					<h2 style="padding-top: 2vh"> I'd love to hear from you! </h2>
+					<p> Thanks for your interest in connecting with me! Please fill out the form below to receive my contact information. Your details will be used solely for professional communication purposes.</p>
+					<form class="contact-form gform" method="POST" action="https://script.google.com/macros/s/AKfycbwRNN32q3K5RKCRbBqluoYq8JOia-YSpfcClFOQAxe3MCVCHOeaZFxCOfOAvum12iHOVA/exec">
+						<label for="name"> Name </label>
+						<input type="text" id="name" name="name" placeholder="Your Name">
+						<label for="company"> Company </label>
+						<input type="text" id="company" name="company" placeholder="Your Company">
+						<label for="email"> Email * </label>
+						<input type="email" id="email" name="email" placeholder="Your Email" required>
+						<div>
+							<label for="linked">Would you like to connect on LinkedIn? </label><input type="checkbox" id="linked" name="linked" value="linked"></div>
+						<p style="font-size: 1em; margin: none;"> Reason for Contact: </p>
+						<div><input type="checkbox" id="jobOp" name="jobOp" value="jobOp">
+						<label for="jobOp">Job Opportunity</label></div>
+						<div><input type="checkbox" id="intern" name="intern" value="intern">
+						<label for="intern">Internship Opportunity</label></div>
+						<div><input type="checkbox" id="network" name="network" value="network">
+						<label for="network">Networking</label></div>
+						<div><input type="checkbox" id="ment" name="ment" value="ment">
+						<label for="ment">Mentorship or Coaching</label></div>
+						<div><input type="checkbox" id="freelance" name="freelance" value="freelance">
+						<label for="freelance">Freelance Work</label></div><br>
+						<label style="margin-top: 10px;" for="infoQ"> Additional Information or Questions</label>
+						<textarea name="infoQ"></textarea>
+						<input type="submit" id="submit" value="Send Message">
+						<div style="display: none;" class="thankyou_message">
+							<p style="text-align: center;line-height: 1.2em; font-size: 1em; border: 5px double #fecb34; padding: 5px; border-radius: 10px;"> Thanks for reaching out! I appreciate your interest and look forward to connecting with you. </p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer_name" style="display: flex; gap: 10px; font-size: 2em; align-self: center; align-items: center; font-size: 2em"> <img src="Images/logosized.png" style="max-width: 50px" alt="Fizza Ahmed Logo"> fizza ahmed </div>
+			<div class="footer_jump">
+				<p style="margin: 0px;"> Jump To </p>
+				<ul>
+					<li><a href="resume.html">My Resume</a></li>
+					<li><a href="" onclick="footerJump()">A Random Project</a></li>
+					<li><a href="thesis.html">My Master's Thesis</a></li>
+				</ul>
+			</div>
+			<div class="footer_reach">
+				<p style="margin: 0px;"> Reach out by </p>
+				<ul>
+					<li id="foot_email"><a href="mailto:fizzaahmed2000@hotmail.com"> &#9993; Email</a></li>
+					<li><a href="linkedin.com/in/fizzara"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+					<li><a href="https://fizzara.github.io/contact"><i class="fa-regular fa-note-sticky"></i> Contact Form</a></li>
+				</ul>
+			</div>
+		</div> 
+		<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+		<script>
+			funky()
+			function funky(){
+                let hold = document.querySelector("#nameChange");
+                if(hold.textContent == ".fizzara"){
+                    hold.textContent = "Fizza Ahmed";
+                }else{
+                    hold.textContent = ".fizzara";
+                }
+                setTimeout(funky, 2000);
+            }
+			</script>
+	</body>
+</html>
