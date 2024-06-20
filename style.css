@@ -87,7 +87,7 @@ button{
 	background-color: #803d5f;
 	width: 100vw;
 	/* text-align: center; */
-	height: 100vh;
+	min-height: 100vh;
 	margin: 0px;
 	animation: backgrnd 1.5s ease-in-out;
 	display: flex;
