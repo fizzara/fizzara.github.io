@@ -197,7 +197,7 @@ button{
 }
 
 .header ul{
-	margin: 0.5em;
+	padding: 0px;
 }
 
 .dropdown {
@@ -1281,7 +1281,7 @@ textarea:focus{
 	.game-text{
 		padding: 0px 10px;
 	}
-	
+
 	.footer{
 		gap: 20px;
 	}
