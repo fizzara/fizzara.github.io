@@ -88,9 +88,10 @@ button{
 	width: 100vw;
 	/* text-align: center; */
 	height: 100vh;
+	margin: 0px;
 	animation: backgrnd 1.5s ease-in-out;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -99,6 +100,7 @@ button{
 	animation: fadein 1s linear 1.5s forwards;
 	opacity: 0;
 	padding-top: 5vh;
+	margin: 0px;
 	/* margin-top:0.1vh; */
 	color: rgb(243, 229, 210);
 	font-size: 5em;
@@ -122,7 +124,7 @@ button{
 
 .introItemDiv{
 	color: rgb(243, 229, 210);
-	padding: 3vw;
+	padding: 0vw 3vw;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
