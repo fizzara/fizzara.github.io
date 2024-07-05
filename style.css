@@ -584,8 +584,8 @@ button{
 
 .resume-me{
 	display: flex;
-	flex-flow: row wrap;
-	/* gap: 1em; */
+	flex-flow: row nowrap;
+	gap: 1em;
 	justify-content: center;
 
 }
@@ -758,6 +758,16 @@ button{
 .resume-skill-sub h3{
 	
 
+}
+
+.certif{
+	color: black;
+	/* font-style: italic; */
+	font-size: 0.9em;
+}
+
+.certif:hover{
+	color: #14766A;
 }
 
 #download-resume{
@@ -1195,6 +1205,10 @@ textarea:focus{
 /* CSS FOR MEDIA QUERYS */
 
 @media screen and (max-width: 800px), ((pointer:coarse), (pointer:none)){
+	.resume-me{
+		flex-flow: column nowrap;
+		align-items: center;
+	}
 
 	.resume-me-picture{
 		text-align: left;
@@ -1303,6 +1317,7 @@ textarea:focus{
 
 	.resume-holder{
 		margin-right: 0;
+		padding: 10px 20px;
 	}
 
 	.resume-education{
@@ -1408,6 +1423,9 @@ textarea:focus{
 		padding: 0px 2.5vw 5vw 0px;
 	}
 
+	.resume-me{
+		gap: 1em;
+	}
 	
 	.memories-images{
 		flex-basis: 100%;
