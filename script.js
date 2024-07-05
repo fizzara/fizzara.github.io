@@ -1,4 +1,3 @@
-/*JS for code page */
 function responseveIframe() {
   $('iframe').height(
 	$('iframe').attr("height") / $('iframe').attr("width") * $('iframe').width()
@@ -84,4 +83,20 @@ function footerJump(){
   arr = ["video.html#tlou", "video.html#rube", "art.html", "code.html", "code.html#html-code", "photography.html", "Memories.html", "TrainQuest.html", "DauDesignDoc.html", "design.html#web-design", "design.html"];
   j = Math.floor(Math.random() * (arr.length-1));
   window.location.href = arr[j];
+}
+
+
+/*CSS NEW INDEX*/
+
+function skipWelcome(){
+  var name = document.getElementById("entryName");
+  var tag = document.getElementById("entryTag");
+  var back = document.getElementById("entryTransition");
+  var mainWelcome = document.getElementById("indexWelcome");
+
+  name.setAttribute("visibility", "hidden");
+  tag.setAttribute("visibility", "hidden");
+  back.setAttribute("visibility", "hidden");
+  mainWelcome.setAttribute("opacity", "100%");
+  
 }

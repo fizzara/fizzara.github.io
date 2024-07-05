@@ -81,7 +81,113 @@ button{
 	border: none;
 }
 
-/* CSS for Intro Page */
+.entryTransition{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #291e30; 
+	animation-name: backgroundCol;
+	animation-duration: 2s;
+	animation-delay: 6.5s;
+	animation-fill-mode: forwards;
+	z-index: 1;
+}
+
+@keyframes backgroundCol {
+	100%{
+		background-color: rgba(128, 61, 95, 0);
+		visibility: hidden;
+	}
+}
+
+#entryName{
+	font-size: 5em;
+	font-weight: 800;
+	color: white;
+	text-decoration: #803d5f solid underline 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	/* animation-name: nameDisp; */
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+#entryTag{
+	font-size: 5em;
+	font-weight: 800;
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-decoration: #803d5f wavy underline 2px;
+	overflow: hidden;
+	white-space: nowrap;
+	animation-name: nameDisp;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes nameDisp{
+	0%{ 
+		width: 0%; 
+		visibility: visible; 
+	}
+	50%{ 
+		width: 100%;
+	}
+	100%{ 
+		width: 0%; 
+		visibility: hidden; 
+	}
+}
+
+.indexContent{
+	display: flex;
+	flex-flow: column nowrap;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	background-color: #803d5f;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+}
+
+#indexWelcome{
+	color: white;
+	text-align: center;
+	margin-top: 3vh;
+	text-decoration: none;
+	animation-name: welcomeFadeIn;
+	animation: 2s ease-out 0s welcomeFadeIn;
+	animation-fill-mode: forwards;
+}
+
+#welcomeLogo{
+	align-self: center;
+	margin-top: 5vh;
+	max-width: 10vw;
+	animation: 2s ease-out 7s welcomeFadeIn;
+	animation-fill-mode: forwards;
+}
+
+@keyframes welcomeFadeIn {
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+		transform: translateY(5vh);
+	}
+}
+
+
+/* CSS for Index Page */
 
 .large{
 	background-color: #803d5f;
