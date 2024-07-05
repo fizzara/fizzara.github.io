@@ -7,6 +7,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
 		<script src="https://kit.fontawesome.com/f1c27a6a68.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="script.js"></script>
 		<title> Fizza Ahmed </title>
 		<meta name="description" content="Portfolio website for Fizza Ahmed">
 		<meta name="keywords" content="portfolio, artist, toronto, web designer, student">
@@ -58,14 +59,69 @@
 						<h2 style="font-weight: 600; margin-bottom: 0px; font-size: 1em"> Programmer, Designer, Artist &nbsp &nbsp  (She/Her) </h2>
 						<h3 style="font-weight: 400; margin-top: 4px"> <i class="fa-regular fa-paper-plane"></i> <a href="mailto:fizzaahmed2000@hotmail.com" style="color: black">fizzaahmed2000@hotmail.com</a> | Toronto, ON </h3>
 						<h3 style="font-weight: 400; margin-top: 4px"> <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/fizzara" style="color: black"> Connect with me on LinkedIn </a> </h3>
-						<p style="font-size: 1em"> Welcome to my digital canvas! I am a digital designer driven to transform ideas into visually and conceptually striking experiences. I aim to use my robust academic background to apply thoughtful design strategies to reduce social and technological accessibility gaps in digital media, and to advocate for improved accessibility and user experience. Recently I took part in the Develop at Ubisoft program where I worked with a mentor to develop a design document of a High Value Character for the game Watch Dogs: Legion. View the <a href="https://fizzara.github.io/DAUDesignDoc"> final design document here.</a>
+						<p style="font-size: 1em"> Welcome to my digital canvas! I am a digital designer driven to transform ideas into visually and conceptually striking experiences. I aim to use my robust academic background to apply thoughtful design strategies to reduce social and technological accessibility gaps in digital media, and to advocate for improved accessibility and user experience. Recently I took part in the Develop at Ubisoft program where I worked with a mentor to develop a design document of a High Value Character for the game Watch Dogs: Legion. <a href="https://fizzara.github.io/DAUDesignDoc"> View the final design document here.</a>
 						</p>
 					</div>
 				</div>
-				<div class="resume-container1">
+				<div class="resume-holder">
+					<div class="resume-skill-vert">
+						<h2> Technical Skills </h2>
+						<div class="resume-skill-sub">
+							<h3> Programming Languages and Frameworks </h3>
+							<ul class="resume-list">
+								<li><a href="code.html"> HTML </a></li>
+								<li><a href="code.html"> CSS </a></li>
+								<li><a href="thesis.html#thesisCode"> Python </a></li>
+								<li><a href="code.html"> Javascript </a></li>
+								<li> React </li>
+							</ul>
+							<h3> Design Knowledge </h3>
+							<ul class="resume-list">
+								<li><a href="design.html"> Figma </a></li>
+								<li><button onclick="unfold()"> Adobe Creative Suite </button></li>
+								<li id="adobe_unfold" class="listHide" style="border-right: none">
+									<ul class="resume-list">
+										<li><a href="art.html"> Illustrator </a></li>
+										<li><a href="art.html#infographic"> InDesign </a></li>
+										<li> Photoshop </li>
+										<li><a href="photography.html"> Lightroom </a></li>
+										<li><a href="video.html"> Premiere </a></li>
+										<li> Character Animator </li>
+										<li> Animate </li>
+										<li style="border-right: none"> After Effects </li>
+									</ul>
+								</li>
+								<!-- <li><a href="art.html"> Adobe Illustrator </a></li>
+								<li> Adobe Photoshop </li>
+								<li><a href="photography.html"> Adobe Lightroom </a></li>
+								<li> Adobe InDesign </li>
+								<li> Adobe Premiere Pro </li> -->
+								<li> Canva </li>
+								<li><a href="code.html#wordpress"> Wordpress </a></li>
+							</ul>
+							<h3> Game Design Programs </h3>
+							<ul class="resume-list">
+								<li><a href="Memories.html"> Unreal Engine 5 </a></li>
+								<li><a href="TrainQuest.html"> Unity </a></li>
+								<li> Godot </li>
+							</ul>
+							<h3> Additional Proficiencies </h3>
+							<ul class="resume-list">
+								<li> UX/UI Design </li>
+								<li> Accessibility Best Practices </li>
+								<li> Fluent in English and French </li>
+								<li> Microsoft Office </li>
+								<li> Online and Hybrid Work Experience </li>
+								<!-- <li> Storyboarding </li>
+								<li> Photography and Videography </li> -->
+							</ul>
+						</div>
+					</div>
+					<hr>
+					<h2> Education </h2>
 					<div class="resume-education">
-						<div style="margin: 1em 0vw">
-							<h2> Toronto Metropolitan University </h2>
+						<div class="resume-edu-block">
+							<h3> Toronto Metropolitan University </h3>
 							<p style="font-size: 1em;"><i> 2022 - 2023 </i></p>
 							<p> Master of Digital Media </p>
 							<p style="font-size: 1em; margin-top: 0px; padding-top: 0px"> Major Research Project: 
@@ -73,52 +129,47 @@
 							<br> Using OpenCV and Tesseract-OCR, this project resulted in a Python program that takes in information on player and enemy location, and returns haptic feedback to inform the player. The ultimate goal would be an API that could be leveraged by game creators to allow their game to natively feed the gamepad information.
 							</p>
 						</div>
-						<div style="margin: 0em 0vw 1em">
-							<h2 style="margin-top: 0em;"> McMaster University </h2>
+						<div class="resume-edu-block">
+							<h3> McMaster University </h3>
 							<p style="font-size: 1em;"><i> 2018 - 2022 </i></p>
 							<p> Honours Bachelor in Humanities </p>
-								<p style="font-size: 1em;"><span style="font-style: italic"> Summa Cum Laude </span>
-								<br> Double Major in Multimedia and Theatre & Film Studies </p>
+							<p style="font-size: 1em;"> Double Major in Multimedia and Theatre & Film Studies 
+							<br> <i> Summa Cum Laude </i></p>
+							<p style="font-size: 1em; margin-top: 0px; padding-top: 0px"> Thesis Project: 
+							<br><span style="font-style: italic"> <a href="https://fizzara.github.io/thesis">The View from the Top</a>  </span>
+							<br> A serious game about the cycle of anxiety. It is a single level platformer 
+							that demonstrates how anxiety is a circle that cannot be broken out of. 
+							</p>
 						</div>
-						<!-- <div style="margin: 1em 0vw 1em 0vw;">
-							<h2> Pierre Elliott Trudeau High School </h2>
-							<h3><i> 2014 - 2018 </i></h3>
-							<p style="font-size: 1em">Ontario Secondary School Diploma
-							in the French Immersion Program
-							Recipient of the Ontario Scholar’s
-							Award</p>
-						</div> -->
 					</div>
-					<div class="resume-skills">
-						<div style="margin-top: 1em;">
-							<h2> Professional Skills </h2>
-							<ul style="font-weight: 400; padding-left: 20px;">
-								<li> Experience Coding in HTML, CSS, Javascript, Java, and Python </li>
-
-								<li> Skilled in Adobe Suite Programs</li>
-								<li> Experience creating mock-ups, prototypes, and wireframes in Figma </li>
-								<li> Experience with Unreal Engine 5, Unity, GameMaker Studio, and Godot Engine</li>
-								<li> Education in UI/UX and interaction design </li>
-								<li> Knowledge of accessibility best practices </li>
-								<li> Experience with Graphic Design and Typesetting </li>
-								<li> Fluently Biligual in English and French </li>
-							</ul>
-						</div>
-						<div style="margin-top: 0em;margin-bottom: 1em">
-							<h2> Transferable  Skills </h2>
-							<ul style="font-weight: 400; padding-left: 20px;">
-								<li> Skilled at producing creative solutions within project guidelines </li>
-								<li> Experience working in an online professional environment </li>
-								<li> Strong interpersonal and collaborative skills</li>
-								<li> Highly detail oriented </li>
-								<li> Effective at problem solving </li>
-								<li> Takes initiative and leadership </li>
-								<li> Strong organization skills </li>
-								<li> Time management skills </li>
-							</ul>
-						</div>
+					<hr>
+					<div class="resume-certificate">
+						<h2 style="margin: 0"> Online Certificate Courses </h2>
+						<ul class="certif-list">
+							<li> <span class="certif-title"> Foundations of User Experience (UX) Design </span>
+								<br> Google Certificates
+								<br> May 2024 - Present
+							</li>
+							<li> <span class="certif-title"> CS50's Web Programming with Python and JavaScript </span>
+								<br> HarvardX
+								<br> May 2024 - Present
+							</li>
+							<li> <span class="certif-title"> Learn React </span>
+								<br> Codecademy
+								<br> May 2024 - Present
+							</li>
+							<li> <span class="certif-title"> Introduction to Web Accessibility </span>
+								<br> W3Cx
+								<br> May 2024 - Present
+							</li>
+						</ul>
+					</div>
+					<hr>
+					<div id="res-down-hold">
+						<a id="download-resume" href="Additional Files/AhmedF_Resume.pdf" download> Download my printable resumé here! </a>
 					</div>
 				</div>
+				<!-- <hr>
 				<div class="resume-certificate">
 					<h2 style="margin: 0"> Online Certificate Courses </h2>
 					<ul class="certif-list">
@@ -139,10 +190,8 @@
 							<br> May 2024 - Present
 						</li>
 					</ul>
-				</div>
-				<div id="res-down-hold">
-					<a id="download-resume" href="Additional Files/AhmedF_Resume.pdf" download> Download my printable resumé here! </a>
-				</div>
+				</div> -->
+				
 				
 				<h1 style="text-decoration: underline; text-decoration-color: #fecb34; text-align: left; margin: 1em 0em 0.5em;"> Looking for more? </h1>
 				<div class="resume-more">
@@ -166,7 +215,21 @@
 			</div>
 			
 			<div class="timeline">
-			<h2 style="text-decoration: underline"> Work Experience </h2>
+			<h2 style="text-decoration: underline"> Experience </h2>
+				<div class="container">
+					<div class="content">
+						<h2> Freelance Graphic Design - First Work Ontario </h2>
+						<h3><i> June 2024 </i></h3>
+						<p> Redesigned curriculum design template to be more visually appealing and professional, designed to appeal to and engage youth aged 15-18. Redesigned a sample lesson plan template and a slide deck. </p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="content">
+						<h2> Game Design Stream - Develop at Ubisoft </h2>
+						<h3><i> Sept 2023 - March 2024 </i></h3>
+						<p> Worked with a mentor to develop and present a developed concept for a High Value Character for the game Watch Dogs: Legion. The character had to fit in world, have three to four abilities, and any other pertinent information. Reached the semi-final stage, up against 9 other mentees. </p>
+					</div>
+				</div>
 				<div class="container">
 					<div class="content">
 						<h2> Web Designer - Networked Imagination Laboratory </h2>
@@ -256,6 +319,25 @@
 				</ul>
 			</div>
 		</div>  
+		<script>
+			function unfold(){
+				var unfoldable = document.getElementById("adobe_unfold");
+				var arrow = document.getElementById("rotateArrow");
+				var style = unfoldable.style.display;
+				
+				unfoldable.classList.toggle("listHide");
+				unfoldable.classList.toggle("listShow");
+				// if(style == "none"){ //to show
+				// 	// arrow.classList.remove("arrow-Back");
+				// 	// arrow.classList.add("arrow-Down");
+				// 	unfoldable.style.display = "inline-block";
+				// }else{ //to hide
+				// 	// arrow.classList.add("arrow-Back");
+				// 	// arrow.classList.remove("arrow-Down");
+				// 	unfoldable.style.display = "none";
+				// }
+			}
+		</script>
 	</body>
 	
 </html>
