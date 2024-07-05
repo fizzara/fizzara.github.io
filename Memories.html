@@ -28,7 +28,7 @@
 				<ul style="margin: 0px;">
 					<li class="headLinks">
 						<div class="dropdown">
-							<span class="header-category" > Works </span>
+							<button class="header-category dropdown-button" > Works </button>
 							<ul class="dropdown-content">
 								<li><a href="https://fizzara.github.io/art"> Art & Illustration </a></li>
 								<li><a href="https://fizzara.github.io/code"> Code </a></li>
@@ -39,8 +39,8 @@
 								<li><a href="https://fizzara.github.io/video"> Video </a></li>
 							</ul>
 						</div>
-						<span style="border-right: 1px solid white;"></span>
-						<a class="header-category" href="https://fizzara.github.io/resume" style="padding-left: 0.5em;"> Resumé </a>
+						<span style="border-right: 1px solid white; padding-right: 0.5em;"></span>
+						<button class="header-category dropdown-button" style="padding-left: 0.5em;" onclick="location.href = 'https://fizzara.github.io/resume';"> Resumé </button>
 					</li>
 				</ul>
 			</nav>
@@ -50,64 +50,86 @@
 			
 			<h1 style="margin-top: 40px"> MEMORIES </h1>
 			<h2 style="font-size: 1.5em"> Game Design project at Toronto Metropolitan University for the program Master of Digital Media under Dr. Kris Alexander </h2>
-			<p style="font-size: 1em"><a href="#prototype"><i> Jump directly to Final Product </i></a></p> 
+			<!-- <span style="font-size: 1.5em; font-weight: 800"><i>"Water Holds Memories"</i></span> -->
+			<p style="font-size: 1em"><a href="#prototype"><i> Jump directly to Final Product Video </i></a></p> 
 			<p> <i>Memories</i> is about losing childhood memories, having them be washed away by time but holding on to them as hard as you can. It is an exploration of Unreal Engine 5, megascans, and level design.
 			</p>
 			<p>
-			This game was created over the course of a semester. It underwent 4 phases: a research phase, a create phase, a refine phase, and a prototype delivery phase. Sections of the phases are presented below.
+			This game was created over the course of a semester. It underwent multiple phases: a create phase, a refine phase, and a prototype phase. Sections of the phases are presented below.
 			</p>
 
 
 			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Create Phase</i> </h3>
-			
-				<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR8WyHS2mq40esBNyNfOH735_l35J20_HB5gpxK7p4zdzWJbIfKpSiWEYrX9svDbg/embed?start=false&loop=true&delayms=30000" frameborder="0" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				
-			<div style="display: flex; flex-flow: row wrap; justify-content: space-evenly; gap: 20px">
-				<iframe width="48%" height="400" src="https://www.youtube.com/embed/MpjoTuoBXpM?si=24h5JRqBgSlm-pb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-				<iframe width="48%" height="400" src="https://www.youtube.com/embed/l4u6PkZk39w?si=6xAKkiRYKBvfkyAb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
-				
+			<p> The <i>Create Phase</i> of this project required 3 deliverables. The first is a concept and storyboarding presentation of what the expected final product would be. The second and third were explorations in Unreal Engine for effects that would be used in game. </p>
+			<div class="memories-holder">	
+				<iframe class="memories-vids" src="https://docs.google.com/presentation/d/e/2PACX-1vR8WyHS2mq40esBNyNfOH735_l35J20_HB5gpxK7p4zdzWJbIfKpSiWEYrX9svDbg/embed?start=false&loop=true&delayms=30000" frameborder="0" width="800" height="500" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+				<p class="memories-text"> 
+					Concept and Storyboard <br style="margin-bottom: 5px">
+					This presentation explored the base ideas for this project. The main idea behind the project is that water holds memories. Focusing on the hollistic idea that water connects and retains all, this project explored water in relation to my childhood memories. The major theme of this project is nostalgia, and the feeling of memories eventually being washed away. This presentation then roughly storyboards the project, explaining the start level, the transition between levels, and the flow. It also outlines possible level explorations for future development. Ultimately, I decided to create the canoeing level for this project, as I felt this gave me the most space for exploration of Unreal Engine, allowing me to work with meshes, fluid, lighting, sound, and more. </p>
+			</div>
+			<br>
+			<div class="memories-holder">
+				<iframe class="memories-vids" src="https://www.youtube.com/embed/MpjoTuoBXpM?si=24h5JRqBgSlm-pb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<p class="memories-text">
+					Camera Effect <br style="margin-bottom: 5px">
+					This camera effect was created as an overlay for the first person camera of the project. Players could activate the effect to "look through" the viewfinder of their camera to take pictures of their surroundings and "capture" the memories if they so wished. Once "captured", the image would save for the player to look back on in the future to keep the memory alive. It consisted of an animation of a crosshair coming down, added film grain, added lens flare, and an animation with sound of the shutter closing when the player clicks. 
+				</p>
+			</div>
+			<br>
+			<div class="memories-holder">
+				<iframe class="memories-vids" height="400" src="https://www.youtube.com/embed/l4u6PkZk39w?si=6xAKkiRYKBvfkyAb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<p class="memories-text">
+					Canoe and Water Physics <br style="margin-bottom: 5px">
+					Realistic water in games is difficult, but using Unreal's built in fluid simulation was incredibly easy. To a point. In the level I decided to create, the player would be floating down a river in a canoe. And so, I imported a canoe mesh and set to work getting it to float. That started out rough, as is shown in this video which was included for a moment of levity, as well as to show progress of the level and exploration of the engine. As is visible in the final project, I managed to get the canoe to float correctly.
+				</p>
+			</div>
 			
 			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Refine Phase</i> </h3>
-			<div class="photoholder" style="justify-content: flex-start" id="story">
-				<div class="photo">
-					<div class="slideshow-containter">
-						<div class="slides7">
-							<img src="Images/Refine/Level2BirdsEye.png" alt="Bird's eye  view of the level, slightly canted." style="width:100%">
-						</div>
+			<div class="memories-holder">
+				<div class="memories-images">
+					<div class="photo">
+						<div class="slideshow-containter">
+							<div class="slides7">
+								<img src="Images/Refine/Level2BirdsEye.png" alt="Bird's eye  view of the level, slightly canted." style="width:100%">
+							</div>
 
-						<div class="slides7">
-							<img src="Images/Refine/Level2BirdsEye2.png" alt="Birds eye view of the level, from directly above." style="width:100%">
-						</div>
+							<div class="slides7">
+								<img src="Images/Refine/Level2BirdsEye2.png" alt="Birds eye view of the level, from directly above." style="width:100%">
+							</div>
 
-						<div class="slides7">
-							<img src="Images/Refine/Level2BirdsEye3.png" alt="A birds eye view of the level's river, with cliffs on the left and trees on the right. Empty world is also shown." style="width:100%">
-						</div>
+							<div class="slides7">
+								<img src="Images/Refine/Level2BirdsEye3.png" alt="A birds eye view of the level's river, with cliffs on the left and trees on the right. Empty world is also shown." style="width:100%">
+							</div>
 
-						<div class="slides7">
-							<img src="Images/Refine/Level2LakeShot.png" alt="A shot of the lake of the level, with trees on the close left and in the distance." style="width:100%">
-						</div>
+							<div class="slides7">
+								<img src="Images/Refine/Level2LakeShot.png" alt="A shot of the lake of the level, with trees on the close left and in the distance." style="width:100%">
+							</div>
 
-						<div class="slides7">
-							<img src="Images/Refine/Level2RiverShot.png" alt="A close up of the river in the level, with trees on the left and cliffs on the right." style="width:100%">
-						</div>
-						<div style="text-align:center">
-							<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-								<span class="dot7" onclick="currentSlide(1, 0)"></span>
-								<span class="dot7" onclick="currentSlide(2, 0)"></span>
-								<span class="dot7" onclick="currentSlide(3, 0)"></span>
-								<span class="dot7" onclick="currentSlide(4, 0)"></span>
-								<span class="dot7" onclick="currentSlide(5, 0)"></span>
-							<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+							<div class="slides7">
+								<img src="Images/Refine/Level2RiverShot.png" alt="A close up of the river in the level, with trees on the left and cliffs on the right." style="width:100%">
+							</div>
+							<div style="text-align:center">
+								<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+									<span class="dot7" onclick="currentSlide(1, 0)"></span>
+									<span class="dot7" onclick="currentSlide(2, 0)"></span>
+									<span class="dot7" onclick="currentSlide(3, 0)"></span>
+									<span class="dot7" onclick="currentSlide(4, 0)"></span>
+									<span class="dot7" onclick="currentSlide(5, 0)"></span>
+								<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+							</div>
 						</div>
 					</div>
 				</div>
+				<p class="memories-text">
+					The refine process consisted of bringing the current work to a higher, if not yet completed level. For this section, I refined the canoeing level of the project, bringing it all together visually and making the canoe move. This is visible in the slideshow images, showing bird's eye views of the finished level, how the meshes are placed, the track for the canoe, and upclose shots from in the level. Naturalism was very important to me in this project, as I wanted a realistic first person to put the player inside the memory. I also wanted to explore working with realistic graphics in Unreal Engine, and this project was a perfect place to do so. 
+				</p>
 			</div>
+
 			
 			<h3 style="text-decoration: underline;margin-top: 40px;"> <i>Prototype Phase</i> </h3>
-			<div id="prototype" style="width: 100%; height: 600px">
+			<div id="prototype">
 			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AgDCKEVziIk?si=8u_lTDTsJ19r8Hc6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+			<p> This is a recording of the final project playthrough, starting on the memory beach, enclosed by rocky cliffs looking out onto neverending water. The sun is low in the sky, and the skybox is tweaked to give a sunset look to the level, evoking the feeling of timelessness, in a dreamy state. Washed up on the beaches shore is a canoe that the player can interact with, allowing them to enter a memory. The screen dips to black and the player wakes up in the canoe memory, with the ability to look around and to use the camera to take pictures of the environment. There are signs of life on the shore of the lake: deer grazing, birds in the trees, another canoe next to a lit campfire. As the player continues around the lake they're left to enjoy the peacefulness of being on the water. As they reach the end of the memory, the camera dips to black again and the player returns to the original beach. There they discover the canoe is now gone, the memory washed away. </p>
 			
 		</div>
 		
