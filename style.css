@@ -643,7 +643,7 @@ button{
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 0 5px;
+  margin: 10px 5px 0px;
   background-color: #fecb34;
   border-radius: 50%;
   display: inline-block;
@@ -1269,7 +1269,7 @@ textarea:focus{
 
 /* CSS FOR FOOTER */
 
-.footer{
+footer{
 	color: white;
 	background-color: #803d5f;
 	margin-bottom: 0px;
@@ -1281,28 +1281,27 @@ textarea:focus{
 	gap: 100px;
 }
 
-.footer ul{
+footer ul{
 	list-style-type:none;
 	padding-left: 0px;
 }
 
-.footer a{
+footer a{
 	color: white;
 	text-decoration: none;
 }
-.footer a:hover{
+footer a:hover{
 	color: #FEE495;
 	text-decoration: underline;
 }
 
-
-.footer_name{
+footer_name{
 	order: 1;
 }
-.footer_jump{
+footer_jump{
 	order: 2;
 }
-.footer_reach{
+footer_reach{
 	order: 3;
 }
 
@@ -1502,19 +1501,19 @@ textarea:focus{
 		padding: 0px 10px;
 	}
 
-	.footer{
+	footer{
 		gap: 20px;
 	}
 
-	.footer_name{
+	footer_name{
 		order: 3;
 		padding-bottom: 2vh;
 	}
-	.footer_jump{
+	footer_jump{
 		margin: 0vw 10vw;
 		order: 1;
 	}
-	.footer_reach{
+	footer_reach{
 		margin: 0vw 10vw;
 		padding-top: 0;
 		order: 2;
@@ -1669,7 +1668,7 @@ textarea:focus{
 		flex-basis: 66%;
 	}
 
-	.footer{
+	footer{
 		justify-content: center;
 		gap: 10vw;
 	}
