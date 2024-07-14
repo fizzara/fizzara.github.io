@@ -19,6 +19,7 @@
 		
 	<body>
 		<header class="header" style="padding: 0.5em 7vw 0.7em 7vw; flex-flow: column nowrap; align-items: center;">
+			<a href="#contact-f-skip" class="skip"> Skip to Contact Form </a>
 		
 			
 			<a href="index.html" class="logo-img" > <img src="Images/logosized.png" alt="Fizza Ahmed Logo - Home" style="max-height:2.5em"> </a>
@@ -35,7 +36,7 @@
 					<p class="contact-links"><i class="fa-regular fa-address-card"></i><a href="#" onclick="window.open('Additional Files/AhmedF_Resume.pdf')">My Resumé </a></p>
 					
 				</div>
-				<div class="contact-form-holder">
+				<div id="contact-f-skip" class="contact-form-holder">
 					<h2 style="padding-top: 2vh"> Let's Talk! </h2>
 					<p> I'd love to connect with you! Use the form below to send me a message. <br><br>Your details will be used solely for professional communication purposes.</p>
 					<form class="contact-form gform" method="POST" action="https://script.google.com/macros/s/AKfycbzOnOSca0EfgkKGoyzyuRnvn5tphxgBCaOSHOBcFilBCUI8pTsFg4lMaTC6CyqpsnlS6g/exec">
@@ -49,7 +50,7 @@
 							<input type="checkbox" id="linked" name="linked" value="Yes"><label for="linked">Would you like to connect on LinkedIn? </label>
 						</div> -->
 						<label style="margin-top: 10px;" for="infoQ"> What's on your mind?</label>
-						<textarea name="infoQ" id="infoQ" placeholder="Not sure what to write? Tell me your favourite joke!"></textarea>
+						<textarea name="infoQ" id="infoQ" placeholder=""></textarea>
 						<input type="submit" id="submit" value="Send Message">
 						<div style="display: none;" class="thankyou_message">
 							<p style="text-align: center;line-height: 1.2em; font-size: 1em; border: 5px double #fecb34; padding: 5px; border-radius: 10px;"> Thanks for reaching out! I appreciate your interest and look forward to connecting with you. </p>
@@ -78,13 +79,15 @@
 				</ul>
 			</div>
 		</footer> 
-		<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 		<script>
 			jokeArr = ["Tell me your favourite joke!", "What is your superpower?", "If you could be a character in any movie, what character and what movie would it be?", "Where do you find inspiration?", "Do you consider yourself a lemon or a lime?", "Tell me about your dream job as a kid!"];
-			funky();
+			jo = "Not sure what to write? "
+			function randJoke(){
+				ke = jokeArr[Math.floor(Math.random() * (jokeArr.length-1))];
+				joke = jo.concat(ke);
+				document.getElementById("infoQ").setAttribute("placeholder", joke);
+			}
 			function funky(){
-				var check = document.getElementById("linked")
-				check.checked = false;
                 let hold = document.querySelector("#nameChange");
                 if(hold.textContent == ".fizzara"){
                     hold.textContent = "Fizza Ahmed";
@@ -93,6 +96,8 @@
                 }
                 setTimeout(funky, 2000);
             }
+			funky();
+			randJoke();
 		</script>
 	</body>
 </html>
