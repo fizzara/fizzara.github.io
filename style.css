@@ -52,6 +52,7 @@ hr{
 	border-color: #219ebc;
 }
 
+
 body, html{
 	margin: 0vw;
 	padding: 0vw;
@@ -60,6 +61,11 @@ body, html{
 p{
 	font-size: 1.3em;
 	font-weight: 400;
+}
+
+a:focus, button:focus{
+	outline: #219ebc solid 5px;
+	outline-offset: 2px;
 }
 
 h1{
@@ -79,6 +85,25 @@ h3{
 button{
 	background: none;
 	border: none;
+}
+
+.skip{
+	color: white;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	opacity: 0;
+	font-weight: 400;
+}
+
+.skip:hover{
+	cursor:default;
+}
+
+.skip:focus{
+	color: white;
+	opacity: 1;
+	margin: 5px;
 }
 
 .entryTransition{
