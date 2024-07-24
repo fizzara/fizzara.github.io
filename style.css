@@ -923,7 +923,7 @@ button{
 }
 
 
-.resume-more{
+/* .resume-more{
 	text-align: left;
 	display: flex;
 	flex-flow: row nowrap;
@@ -931,7 +931,7 @@ button{
 	gap: 0.5vw;
 	margin-right: 1vw;
 	align-self: center;
-}
+} */
 
 .lookimage{
 	display: block;
@@ -955,13 +955,14 @@ button{
 	text-align: center;
 }
 
-.resume-more a{
-	text-decoration: none;
-}
 
-.lookcontainer:hover .lookoverlay{
+/* .resume-more a{
+	text-decoration: none;
+} */
+
+/* .lookcontainer:hover .lookoverlay{
 	opacity: 1;
-}
+} */
 
 .timeline{
 	position: relative;
@@ -1490,10 +1491,10 @@ footer_reach{
 		padding-top: 2px;
 		margin-right: auto;
 	}
-	.resume-more{
+	/* .resume-more{
 		flex-flow: row wrap;
 		gap: 0px;
-	}
+	} */
 	
 	/* .lookimage{
 		width: 40vw;
