@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<script type="text/javascript" src="script.js"></script>
 		<script src="https://kit.fontawesome.com/f1c27a6a68.js" crossorigin="anonymous"></script>
 		<title> The View from the Top | Fizza Ahmed </title>
 		<meta name="description" content="Portfolio website for Fizza Ahmed">
@@ -58,16 +59,83 @@
 				Below I have outlined my creation process.	
 			</p>
 			<h3 style="text-decoration: underline;"> <i>The Pitch</i> </h3>
-			<div style="margin-left: 10px"><p> My initial pitch for my thesis was a platformer game focused on mental health disorders, exploring various common ones 
-				such as anxiety, depression, and ADHD. The game was meant to be an exploration driven game, meant to help the viewer 
-				empathize with the character’s struggles, or to help someone experiencing such feelings feel recognized. This would be 
-				done through puzzles that make the player slow down and reflect on the experiences they are having and how they affect 
-				those with these disorders in real life. 
+			<div>
+				<p> My initial pitch for my thesis was a platformer game focused on mental health disorders, exploring various common ones such as anxiety, depression, and ADHD. The game was meant to be an exploration driven game, meant to help the viewer empathize with the character’s struggles, or to help someone experiencing such feelings feel recognized. This would be done through puzzles that make the player slow down and reflect on the experiences they are having and how they affect those with these disorders in real life. 
 			</p>
-			<p> The influences for my game were Gris, Florence, Journey, and 
-
-			</p> </div>
-
+			<p> The influences for my game were Gris, Florence, Journey, and Hue. </p>
+			<h4> Gris </h4>
+			<div style="text-align: center;">
+				<img src="Images/ViewFromTheTop/Gris.jpg" style="max-width: 30%;" alt="Gris main character platforming in a beautiful level with hands reaching out to grasp her.">
+				<img src="Images/ViewFromTheTop/Gris-2.jpg" style="max-width: 30%;" alt="Gris main character in game looking down at a creature.">
+				<img src="Images/ViewFromTheTop/gris-3.jpg" style="max-width: 30%;" alt="Gris main character held in the palm of a giant stone lady looking down on her.">
+			</div>
+			<p> Gris was my main influence. It is a beautiful game about loss, and is something I took inspiration of many elements from, for my art style and certain gameplay mechanics.</p>
+			<h4> Florence </h4>
+			<p> Florence was less of a direct inspiration, and more inspired my content. It does such a good job addressing mental health in such a simple way, and it inspired my topic for this project. </p>
+			<h4> Journey </h4>
+			<div style="text-align: center;">
+				<img src="Images/ViewFromTheTop/Journey.jpg" style="max-width: 30%;" alt="Still from Journey game of two characters walking up a sand dune with a mountain in the background.">
+				<img src="Images/ViewFromTheTop/Journey2.jpg" style="max-width: 30%;" alt="Journey character sketches in different positions.">
+				<img src="Images/ViewFromTheTop/Journey3.jpg" style="max-width: 30%;" alt="Journey character standing looking at mountain and sun with scarf being blown behind them.">
+			</div>
+			<p> Journey's influence was originally aesthetic, but evolved to be inspirational of the help character in my game. While I would have loved to be able to include multiplayer such as Journey in my game, as a first time game maker it was obviously an impractical idea to say the least. What I did love was the visual of the scarf blowing behind the character, that sense of constant movement and flow. </p>
+			<h4> Hue </h4>
+			<p>Hue's influence was very strong for my inital gameplay ideas. I wanted to create puzzles that the player solved by interacting with the environment, through which they slowly understood the intention for the game. Unforunately with my beginner abilities, this never became a reality, but would be an interesting addition if I were to return to it. </p>
+			<a href="Additional Files/Ahmed_Pitch Notes.pdf">View my original pitch notes here for more detail.</a>
+			</div>
+			<h3 style="text-decoration: underline;"> <i>Concept Art</i> </h3>
+			<div class="vid" id="conceptvid">
+				<div class="vid-embed tlou2" alt="Embed showing 'Thesis - Concept Art' video">
+					<iframe width="100%" height="400" src="https://www.youtube.com/embed/dA69I6GMAvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="vid-text">
+					<p> The first stage of the concept art for my thesis video game, this video shows the main character of the game, as well as the aesthetic that the environment of the game were originally to follow. Using Adobe Illustrator, I created the character and the background, and then imported them into Adobe Character Animator. In Character Animator, I rigged the character to have basic movements, to blink on command and to have her hair wave in the wind along with the background that moves.</p>
+				</div>
+			</div>
+			<h3 style="text-decoration: underline;"> <i>Character Design</i> </h3>
+			<div class="char-design"> 
+				<div class="char-container">
+					<div class="char-slide">
+						<img class="char-img" src="Images/walk.gif" style="width: 100%" alt="Walk Animation">
+					</div>
+					<div class="char-slide">
+						<img class="char-img" src="Images/jump.gif" style="width: 100%" alt="Jump and Fall Animation">
+					</div>
+					<div class="char-slide">
+						<img class="char-img" src="Images/idle.gif" style="width: 100%" alt="Idle Animation">
+					</div>
+					
+					<button class="char-prev" onclick="addSlides(-1)">&#10094;</button>
+					<button class="char-next" onclick="addSlides(1)">&#10095;</button>
+					
+					
+					<div class="caption-container">
+						<p style="font-size: 1.3em" id="caption"></p>
+					</div>
+					<script>
+						var charSlideIndex = 1;
+						displaySlides(charSlideIndex);	
+					</script>
+					
+				</div>
+				<div class="char-text">
+					<p> For my game's character, I wanted someone that reflected me, influenced by the art style of the games. On reflection, my character was trying very hard to be Gris, but when you're starting out I guess you go for what you know. I created various animations for the character to be used in the game. These animations include the walk cycle, the idle animation cycle, and animations for jumping and falling. The skirt and hair flow as the character moves and as the in world wind blows by. </p>
+				</div>
+			</div>
+			<hr>
+			<h3 style="text-decoration: underline;"> <i>Final Playthrough Video</i> </h3>
+			<div class="vid" id="conceptvid">
+				<div class="vid-embed tlou2" alt="Embed showing 'Thesis - Concept Art' video">
+					<iframe width="100%" height="400" src="https://www.youtube.com/embed/2lL1wPwyqvI?si=axilwm-ux-UhyZ5S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="vid-text">
+					<p> Watch the video to view a playthrough of The View From the Top with a voiceover explaining what is happening in the game. </p>
+				</div>
+			</div>
+			<hr>
+			<h3 style="text-decoration: underline;"> <i>Game Files</i> </h3>
+			<p><a href="https://github.com/fizzara/ViewFromTheTop">View the game files on GitHub here.</a></p>
+			<p><a href="https://github.com/fizzara/ViewFromTheTop/releases/tag/v1.0.0">Download the game's exe file here to install and try it yourself!</a></p>
 		</main>
 		
 		<footer class="footer">
