@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;400;600;800&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/jpg" href="Images/Favicon.png"/>
+		<script type="text/javascript" src="script.js"></script>
+		<script src="https://kit.fontawesome.com/f1c27a6a68.js" crossorigin="anonymous"></script>
+		<title> Game Modding | Fizza Ahmed </title>
+		<meta name="description" content="Portfolio website for Fizza Ahmed">
+		<meta name="keywords" content="portfolio, artist, toronto, web designer, student">
+		<meta name="author" content="Fizza Ahmed">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+	</head>
+	
+		
+	<body>
+		<header class="header" style="padding: 0.5em 7vw 0.7em 7vw">
+			<a href="#main" class="skip"> Skip to Main Content </a>
+		
+			<span class="name"> <a href="index.html"> fizza ahmed </a></span>
+			
+			<a href="index.html" class="logo-img"> <img src="Images/logosized.png" alt="Fizza Ahmed Logo - Home" style="max-height:2.5em"> </a>
+			
+			<nav id="navigation" class="site-navigation" role="navigation">
+				<ul style="margin: 0px;">
+					<li class="headLinks">
+						<div class="dropdown">
+							<button class="header-category dropdown-button" > Works </button>
+							<ul class="dropdown-content">
+								<li><a href="https://fizzara.github.io/art"> Art & Design </a></li>
+								<li><a href="https://fizzara.github.io/code"> Code </a></li>
+								<li><a href="https://fizzara.github.io/figma"> Figma Design </a></li>
+								<li><a href="https://fizzara.github.io/game"> Game Design </a></li>
+								<li><a href="https://fizzara.github.io/thesis"> Master's Thesis </a><li>
+								<li><a href="https://fizzara.github.io/photography"> Photography </a></li>
+								<li><a href="https://fizzara.github.io/video"> Video </a></li>
+							</ul>
+						</div>
+						<span style="border-right: 1px solid white; padding-right: 0.5em;"></span>
+						<button class="header-category dropdown-button" style="padding-left: 0.5em;" onclick="location.href = 'https://fizzara.github.io/resume';"> Resumé </button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main id="main"	class="works-content">
+			<h1 style="margin-left: 10px; margin-top: 20px"> Game Modding </h1>
+			<h2 style="font-size: 1.5em; margin-left: 15px"> Baldur's Gate 3 Mod - Knights Radiant Class</h2>
+			<p> Baldur's Gate 3 is an incredible game, and has recently released a modding kit to allow for greater and more detailed mod creation. With this release, I decided to create my own mod to bring together two of my favourite pieces of media: Baldur's Gate 3, and the Stormlight Archive series by Brandon Sanderson. <br> This mod adds the Knights Radiant playable class to Baldur's Gate 3, with the subclass of Windrunner. Further subclasses will be added in the future.</p>
+			<p><i>The mod is currently in production but a link will be posted here when it is published.</i></p>
+
+			<h3> Mod Design </h3>
+			<p> Before I could start creating the mod, I had to design the details and make decisions such as starting stats, spells, skills, and level ups. I decided to start with the Windrunner subclass, as this is the Knights Radiant order that we as fans currently have the most information on. </p>
+			<h4> Beginning Stats </h4>
+			<p> The Windrunner subclass is mostly based off Kaladin, and so the stats Windrunners begin with are also based off his character. They most closely resemble the Paladin class and share many similarities. The two important ability scores for Windrunners are Strength for their physical attacks, and Wisdom for their spellcasting. They begin with proficiencies in all types of armour (including shields), simple and martial weapons, and can choose skill proficiencies. They begin with medium armour and a spear, mimicking Kaladin's preferred weapons. </p>
+			<h4> Oath </h4>
+			<p> To begin with, Windrunners follow the Oath of Devotion, dedicated to courage, compassion, and duty. If an oath is broken, they will follow the Oathbreaker path for now, but eventually I would like to add the Oath Framework by the Community Library team to create more custom and lore accurate Oath instances. </p>
+			<h4> Stormlight </h4>
+			<p> Stormlight is the resource that Knights Radiant use for their powers, and so it becomes a custom spell resource in BG3. Charges of Stormlight can be used to power the Knight's abilities or consumed to heal themselves. Knights Radiant begin as inneficient Stormlight users, only able to refill every Long Rest(LR), but eventually become very efficient at gathering Stormlight, and are able to recharge every Short Rest(SR) instead.</p>
+			<h4> Windrunner Progression </h4>
+			<p> The following details the level progression for Windrunners. The progression is attempting to follow Kaladin's Oath progression and abilities through Rhythm of War.</p>
+			<p class="progressionList"><b> Level 1</b>: 2 Charges of Stormlight(LR); <span class="cantrip">Cantrip Blade Ward</span>; Heal Self(WEAK)
+				<br>
+				<b> Level 2</b>: Ensnaring Strike(MELEE); <span class="cantrip">Cantrip Thorn Whip</span>
+				<br>
+				<b> Level 3</b>: 3 Charges of Stormlight(LR); <span class="cantrip">Cantrip Resistance(SELF ONLY)</span>; Ray of Slow(EDIT TO RAY OF NO MOVEMENT?)
+				<br>
+				<b> Level 4</b>: EARN SHARDBLADE; Branding Smite; Hold Person
+				<br>
+				<b> Level 5</b>: 4 Charges of Stormlight(LR); Compelled Duel; Divine Favour(SELF); EXTRA ATTACK
+				<br>
+				<b> Level 6</b>: Missile Catching; Grant Flight(SELF, 3 TURNS); STOMRLIGHT EFFICIENCY
+				<br>
+				<b> Level 7</b>: 5 Charges of Stormlight(SR); Destructive Wave; Glyph of Warding(SLOW ONLY)
+				<br>
+				<b> Level 8</b>: SQUIRE ABILITIES -> Grant Flight(ALLY, 3 TURNS); Divine Favour(ALLY); Hold Monster
+				<br>
+				<b> Level 9</b>: EARN SHARDPLATE; Aura of Courage
+				<br>
+				<b> Level 10</b>: 6 Charges of Stormlight(SR); Telekinesis; Black Hole
+				<br>
+				<b> Level 11</b>: Permanent Self Flight(NO STORMLIGHT)
+				<br>
+				<b> Level 12</b>: 7 Charges of Stormlight(SR); Improved Shardplate; Improved Shardblade
+			</p>
+			<h4> Shardblade </h4>
+			<p>
+				The Shardblade follows the set up of a Warlock's pact weapon, and uses it as a parent template. With this, Shardblade can take whatever shape the creator chooses. It also combines Sacred Weapon stats at a point, to make it stronger. Shardblade also emits a bright light similar to Nyrulna, and will always return to the user when thrown. There is potential for adding a Deadeye Shardblade as loot in the game, which takes a turn to summon, does not return when thrown, and if used by a Knight Radiant will root them in place and give them disadvantage.
+			</p>
+			<h4> Shardplate </h4>
+			<p>
+				Shardplate will act similarly to Armor of Faith. Users can still wear their own armour below it, but Shardplate will increase their AC and give them further buffs based on their order (subclass). A potential feature of Shardplate will be that its armor class increases based on how much Stormlight the wearer has remaining (if this is not possible, it's strength will scale based on the Knight Radiant level). It will also emit it's own light, similar to Shardblades.
+			</p>
+			<h4> Art </h4>
+			<div style="display: flex; flex-flow: row wrap; gap: 5px;"> 
+				<p style="flex-basis: 49%;"><img src="Images/Modding/KnightRadiant.png"  alt="Symbol of the Knights Radiant, styled as a BG3 Class Icon"><br>The Knights Radiant Symbol, styled and recoloured into a BG3-esque Class Icon. </p>
+				<p style="flex-basis: 49%;"><img src="Images/Modding/Windrunner.png"  alt="Symbol of the Windrunners, styled as a BG3 Subclass Icon"><br>The Windrunner's Symbol, styled and recoloured to be a Subclass Icon. </p>
+			</div>
+		</main>
+		
+		<footer class="footer">
+			<div class="footer_name" style="display: flex; gap: 10px; font-size: 2em; align-self: center; align-items: center; font-size: 2em"> <img src="Images/logosized.png" style="max-width: 50px" alt="Fizza Ahmed Logo"> fizza ahmed </div>
+			<div class="footer_jump">
+				<p style="margin: 0px;"> Jump To </p>
+				<ul>
+					<li><a href="resume.html">My Resume</a></li>
+					<li><a href="" onclick="footerJump()">A Random Project</a></li>
+					<li><a href="thesis.html">My Master's Thesis</a></li>
+				</ul>
+			</div>
+			<div class="footer_reach">
+				<p style="margin: 0px;"> Reach out by </p>
+				<ul>
+					<li id="foot_email"><a href="mailto:fizzaahmed2000@hotmail.com"> &#9993; Email</a></li>
+					<li><a href="linkedin.com/in/fizzara"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+					<li><a href="https://fizzara.github.io/contact"><i class="fa-regular fa-note-sticky"></i> Contact Form</a></li>
+				</ul>
+			</div>
+		</footer> 
+	</body>
+</html>

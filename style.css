@@ -1230,9 +1230,13 @@ button{
 	height: 600px;
 }
 
-/* CSS FOR VIEW FROM THE TOP */
-h4{
+/* CSS FOR MODDING */
+.cantrip{
+	color: #052c39;
+}
 
+.progressionList br{
+	margin-bottom: 3px;
 }
 
 /* CSS FOR THESIS PAGE */
