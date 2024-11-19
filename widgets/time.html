@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="widgets.css">
+</head>
+<body> 
+    <div id="time">
+        <div class="timeCounter" id="hour">
+        </div>
+        <div class="timeCounter" id="minute">
+        </div>
+        <div id="pm" style="font-size: 15px;"></div>
+    </div>
+
+    <script>
+        clock();
+        var pm = false;
+        function clock(){
+            const d = new Date();
+            let hours = d.getHours();
+            (hours-12) >= 1 ? (hours-=12, pm = true) : pm = false;
+            let minutes = d.getMinutes();
+            if (minutes-10 < 0) minutes = "0" + minutes;
+            if (hours-10 < 0) hours = "0" + hours;
+            document.getElementById("hour").innerHTML = hours;
+            document.getElementById("minute").innerHTML = minutes;
+            pm ? document.getElementById("pm").innerHTML = "PM" : document.getElementById("pm").innerHTML = "AM"
+            setTimeout(clock, 1000);
+        }
+        </script>
+</body>

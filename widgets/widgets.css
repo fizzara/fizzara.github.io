@@ -1,0 +1,17 @@
+#time{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.timeCounter{
+    text-align: center;
+    vertical-align: center;
+    background-color: #a491b1;
+    border-radius: 10px;
+    padding: 50px 40px;
+    margin: 5px;
+}
