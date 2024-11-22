@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Life Progress Widget | Fizza Ahmed Portfolio </title>
+    <link rel="stylesheet" type="text/css" href="widgets.css">
+</head>
+<body> 
+    <div class="line"> 
+        <div class="bar" id="hour"> </div> 
+    </div> Day
+    <br>
+    <div class="line"> 
+        <div class="bar" id="week"> </div>
+    </div> Week
+    <br>
+    <div class="line"> 
+        <div class="bar" id="month"> </div> 
+    </div> Month
+    <br>
+    <div class="line"> 
+        <div class="bar" id="year"> </div> 
+    </div> Year
+
+    <script>
+        function check(){
+            const d = new Date();
+            const dayHour = d.getHours();
+            const dayWeek = d.getDay();
+            const dayMonth = d.getDate();
+            const dayYear = d.getMonth();
+
+            const percH = ((parseInt((dayHour/23)*300)).toString()).concat("px");
+            const percW = ((parseInt((dayWeek/6)*300)).toString()).concat("px");
+            const percM = ((parseInt((dayWeek/30)*300)).toString()).concat("px");
+            const percY = ((parseInt((dayYear/11)*300)).toString()).concat("px");
+
+            document.getElementById("hour").style.width = percH;
+            document.getElementById("week").style.width = percW;
+            document.getElementById("month").style.width = percM;
+            document.getElementById("year").style.width = percY;
+            setTimeout(check, 100000);
+        }
+        check();
+    </script>
+</body>

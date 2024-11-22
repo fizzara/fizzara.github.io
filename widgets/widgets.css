@@ -1,17 +1,63 @@
+:root{
+    --background: #a491b1;
+    --purple-week: #7b638b;
+    --purple-month: #634775;
+    --purple-year: #433058;
+    --font: sans-serif;
+}
+
+body{
+    font-family: var(--font);
+}
+
+/*Time*/
 #time{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
     font-size: 30px;
 }
-
 .timeCounter{
     text-align: center;
     vertical-align: center;
-    background-color: #a491b1;
+    background-color: var(--background);
     border-radius: 10px;
     padding: 50px 40px;
     margin: 5px;
 }
+
+/*Life Progress*/
+.bar{
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .line{
+  /*   color: white; */
+    overflow: hidden;
+    height: 30px;
+    width: 305px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #hour{
+    background-color: var(--background);
+  }
+  
+  #week{
+    background-color: var(--purple-week);
+  }
+  #month{
+    background-color: var(--purple-month);
+  }
+  #year{
+    background-color: var(--purple-year);
+  }
